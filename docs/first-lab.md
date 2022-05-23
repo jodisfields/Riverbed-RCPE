@@ -8,7 +8,7 @@
 
 3. Calculate the approximate speed for the SMB file transfers, cold and warm. How do they compare to the previous non optimized transfer? Take some time to experiment
 
-![lab1-image](/assets/lab1-image.png)
+![lab1-image](../assets/lab1-image.png)
 
 > Hint: hovering icons in your Current Connections screen can answer both Parts...
 
@@ -16,7 +16,7 @@
 
 ## Part 2
 
-![lab1-image3](/assets/lab1-image3.png)
+![lab1-image3](../assets/lab1-image3.png)
 
 1. What was the peak LAN throughput in your timescale for HTTPS traffic?
 
@@ -28,7 +28,7 @@
 
 ## Part 3
 
-![lab1-image2](/assets/lab1-image2.png)
+![lab1-image2](../assets/lab1-image2.png)
 
 Note the scale on the Y axis of the chart is automatically adjusted to suit. Hover the mouse over the plot area to display the Data Reduction for various points on the timeline. Note that the LAN Throughput should be greater than WAN Throughput to imply optimization occurring and reducing the amount of throughput on the WAN.
 
