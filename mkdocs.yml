@@ -3,6 +3,7 @@ site_name: RCPE Professional
 site_author: Jodis Fields
 site_description: Riverbed RCPE Professional Implement WAN Optimization Course Notes and Discussion
 repo_name: jodisfields/Riverbed-RCPE
+repo_branch: main
 repo_url: https://github.com/jodisfields/Riverbed-RCPE
 # theme configuration
 theme:
