@@ -61,6 +61,11 @@ plugins:
       enabled: true
 # markdown configuration
 markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
   - tables
   - attr_list
   - md_in_html
