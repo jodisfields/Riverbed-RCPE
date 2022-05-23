@@ -424,29 +424,33 @@
 
 <h1 id="knowledge-check">Knowledge check</h1>
 <h2 id="part-1">Part 1</h2>
+<blockquote>
+<p>Hint: hovering icons in your Current Connections screen can answer both Parts...</p>
+</blockquote>
 <ol>
 <li>In the view below, what informs the connection is optimized?</li>
 <li>In the view below, what informs the connection is encrypted over the WAN?</li>
 <li>Calculate the approximate speed for the SMB file transfers, cold and warm. How do they compare to the previous non optimized transfer? Take some time to experiment
-<img alt="lab1-image" src="../images/lab1-image.png" /><blockquote>
-<p>Hint: hovering icons in your Current Connections screen can answer both Parts...</p>
-</blockquote>
-</li>
+<img alt="lab1-image" src="../images/lab1-image.png" /></li>
 </ol>
 <hr />
 <h2 id="part-2">Part 2</h2>
-<p><img alt="lab1-image3" src="../images/lab1-image3.png" />
-1. What was the peak LAN throughput in your timescale for HTTPS traffic?
-2. What was it for HTTP and SMB?
-3. Why would the optimization effects differ on a "cold pass" of one type of data/traffic versus another?</p>
+<p><img alt="lab1-image3" src="../images/lab1-image3.png" /></p>
+<ol>
+<li>What was the peak LAN throughput in your timescale for HTTPS traffic?</li>
+<li>What was it for HTTP and SMB?</li>
+<li>Why would the optimization effects differ on a "cold pass" of one type of data/traffic versus another?</li>
+</ol>
 <hr />
 <h2 id="part-3">Part 3</h2>
 <p><img alt="lab1-image2" src="../images/lab1-image2.png" />
-Note the scale on the Y axis of the chart is automatically adjusted to suit. Hover the mouse over the plot area to display the Data Reduction for various points on the timeline. Note that the LAN Throughput should be greater than WAN Throughput to imply optimization occurring and reducing the amount of throughput on the WAN.
-1. What was the peak LAN throughput?
-2. When did it happen?
-3. What protocol was it?
-4. What was the total amount of data that was removed from the WAN during your time period?</p>
+Note the scale on the Y axis of the chart is automatically adjusted to suit. Hover the mouse over the plot area to display the Data Reduction for various points on the timeline. Note that the LAN Throughput should be greater than WAN Throughput to imply optimization occurring and reducing the amount of throughput on the WAN.</p>
+<ol>
+<li>What was the peak LAN throughput?</li>
+<li>When did it happen?</li>
+<li>What protocol was it?</li>
+<li>What was the total amount of data that was removed from the WAN during your time period?</li>
+</ol>
 <hr />
 <p>You have successfully created optimized traffic in an in-path deployment, and should understand the nature of cold and warm file transfers. Ideally you noticed significant improvement in transfer times, even with file modifications.
 Useful add-on: SDR is protocol agnostic, so the warm transfer of a byte stream in one application will be equally optimized should that byte stream occur in a different applications. As an example, downloading a file from the datacenter via a file share, then sending the file via email; your local and datacenter SteelHeads will see the file 'cold' when downloading, then 'warm' when that same file is attached to an email.
@@ -458,10 +462,6 @@ Finally, you verified various optimization statistics in different Reports. Good
     
       Last update:
       <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-05-23T12:27:35+10:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-05-23</span>
-      
-        <br>
-        Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-05-23T10:41:53+10:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-05-23</span>
       
     
   </small>
@@ -520,11 +520,6 @@ Finally, you verified various optimization statistics in different Reports. Good
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
   
 </div>
       

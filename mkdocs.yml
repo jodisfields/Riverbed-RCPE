@@ -4,10 +4,15 @@ site_author: Jodis Fields
 site_description: Riverbed RCPE Professional Implement WAN Optimization Course Notes and Discussion
 repo_name: jodisfields/Riverbed-RCPE
 repo_url: https://github.com/jodisfields/Riverbed-RCPE
-
 # theme configuration
 theme:
   name: material
+  analytics:
+    provider: google
+    property: G-DMP6P2VHDS
+  font:
+    text: Roboto
+    code: Roboto Mono
   icon:
     logo: material/library-outline
   features:
@@ -30,9 +35,6 @@ theme:
         name: Switch to light mode
 # extra configuration
 extra:
-  analytics:
-    provider: google
-    property: G-DMP6P2VHDS
   social:
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/u/jodis
@@ -45,7 +47,7 @@ extra:
     - icon: fontawesome/solid/paper-plane
       link: mailto:contact@fieldbox.me
       name: Email
-  generator: true
+  generator: false
 # plugin configuration
 plugins:
   - search:
@@ -55,7 +57,7 @@ plugins:
       locale: en
       timezone: Australia/Sydney
       fallback_to_build_date: true
-      enable_creation_date: true
+      enable_creation_date: false
       enabled: true
 # markdown configuration
 markdown_extensions:
