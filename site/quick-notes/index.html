@@ -17,7 +17,7 @@
     
     
       
-        <title>Riverbed docs - RCPE Professional</title>
+        <title>Quick Notes - RCPE Professional</title>
       
     
     
@@ -78,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#quick-notes" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -107,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Riverbed docs
+              Quick Notes
             
           </span>
         </div>
@@ -296,10 +301,50 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Quick Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Riverbed docs
+        Quick Notes
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#steelhead-v-best-practices-for-performance" class="md-nav__link">
+    SteelHead-V Best Practices for Performance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#steel-head-v-and-riverbed-bypass-nic" class="md-nav__link">
+    Steel Head-v and Riverbed Bypass NIC
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -322,6 +367,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#steelhead-v-best-practices-for-performance" class="md-nav__link">
+    SteelHead-V Best Practices for Performance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#steel-head-v-and-riverbed-bypass-nic" class="md-nav__link">
+    Steel Head-v and Riverbed Bypass NIC
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -333,26 +402,71 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/jodisfields/Riverbed-RCPE/edit/master/docs/riverbed-docs.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/jodisfields/Riverbed-RCPE/edit/master/docs/quick-notes.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-  <h1>Riverbed docs</h1>
-
-
+<h1 id="quick-notes">Quick Notes</h1>
+<ul>
+<li>License Tiers</li>
+</ul>
+<p><img alt="license-tiers" src="../assets/license-levels.png" /></p>
+<h2 id="steelhead-v-best-practices-for-performance">SteelHead-V Best Practices for Performance</h2>
+<ul>
+<li>
+<p>Do not share NICS and use at least 1Gbps</p>
+</li>
+<li>
+<p>Allow resources Hypervisor overhead</p>
+</li>
+<li>
+<p>Do not over provision CPU Use a Server Grade CPU for the Hypervisor</p>
+</li>
+<li>
+<p>Always reserve RAM &amp; Virtual RAM &lt; Physical RAM</p>
+</li>
+<li>
+<p>Use SSDs or other high speed disk for the Segstore - Do not share physical disks between hosts</p>
+</li>
+<li>
+<p>Do not use hyperthreading</p>
+</li>
+<li>
+<p>Apply BIOS power settings for maximum performance</p>
+</li>
+</ul>
+<h2 id="steel-head-v-and-riverbed-bypass-nic">Steel Head-v and Riverbed Bypass NIC</h2>
+<p>Riverbed Bypass NIC-A physical card for the virtual device.</p>
+<ul>
+<li>
+<p>ESX/ESXI</p>
+</li>
+<li>
+<p>Direct Path feature</p>
+</li>
+<li>
+<p>Allows SteelHead-v to contral the bypass hardware:</p>
+</li>
+<li>
+<p>ESXI driver available from the support website Under related Software</p>
+</li>
+<li>
+<p>Hyper-V &amp; KVM support</p>
+</li>
+</ul>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-05-23T10:41:53+10:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-05-23</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-05-23T11:14:38+10:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-05-23</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-05-23T10:41:53+10:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-05-23</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-05-23T11:14:38+10:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-05-23</span>
       
     
   </small>
