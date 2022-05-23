@@ -44,16 +44,6 @@
     <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-  
-
-
-  
-  
-
-
-  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-DMP6P2VHDS"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-DMP6P2VHDS",{page_path:e.pathname})})})</script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DMP6P2VHDS"></script>
-
 
     
     
@@ -329,8 +319,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#steelhead-v-best-practices-for-performance" class="md-nav__link">
-    SteelHead-V Best Practices for Performance
+  <a href="#steelhead-v-best-practices" class="md-nav__link">
+    SteelHead-V Best Practices
   </a>
   
 </li>
@@ -394,6 +384,69 @@
         <li class="md-nav__item">
   <a href="#why-use-different-modes" class="md-nav__link">
     Why use different modes?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#management-and-configuration-mgmt-config" class="md-nav__link">
+    Management and Configuration (Mgmt &amp; Config)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riverbed-steelhead-show-interface" class="md-nav__link">
+    Riverbed SteelHead Show Interface
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riverbed-steelhead-configuration-wizard" class="md-nav__link">
+    Riverbed SteelHead configuration wizard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-interface-configuration" class="md-nav__link">
+    Network interface configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#housekeeping-licensing-structure" class="md-nav__link">
+    Housekeeping - Licensing Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#housekeeping-export-flow-statistics" class="md-nav__link">
+    Housekeeping - Export Flow Statistics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#housekeeping-flow-data-component-basics" class="md-nav__link">
+    Housekeeping - Flow Data Component Basics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#housekeeping-configuration-management" class="md-nav__link">
+    Housekeeping - Configuration Management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    Authentication
   </a>
   
 </li>
@@ -433,8 +486,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#steelhead-v-best-practices-for-performance" class="md-nav__link">
-    SteelHead-V Best Practices for Performance
+  <a href="#steelhead-v-best-practices" class="md-nav__link">
+    SteelHead-V Best Practices
   </a>
   
 </li>
@@ -502,6 +555,69 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#management-and-configuration-mgmt-config" class="md-nav__link">
+    Management and Configuration (Mgmt &amp; Config)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riverbed-steelhead-show-interface" class="md-nav__link">
+    Riverbed SteelHead Show Interface
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riverbed-steelhead-configuration-wizard" class="md-nav__link">
+    Riverbed SteelHead configuration wizard
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-interface-configuration" class="md-nav__link">
+    Network interface configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#housekeeping-licensing-structure" class="md-nav__link">
+    Housekeeping - Licensing Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#housekeeping-export-flow-statistics" class="md-nav__link">
+    Housekeeping - Export Flow Statistics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#housekeeping-flow-data-component-basics" class="md-nav__link">
+    Housekeeping - Flow Data Component Basics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#housekeeping-configuration-management" class="md-nav__link">
+    Housekeeping - Configuration Management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    Authentication
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -521,16 +637,21 @@
 
 
 <h1 id="quick-notes">Quick Notes</h1>
-<h2 id="steelhead-v-best-practices-for-performance">SteelHead-V Best Practices for Performance</h2>
+<h2 id="steelhead-v-best-practices">SteelHead-V Best Practices</h2>
 <ul>
+<li><strong>Dont's</strong> ❌</li>
 <li>Do not share NICS and use at least 1Gbps</li>
-<li>Allow resources Hypervisor overhead</li>
-<li>Do not over provision CPU Use a Server Grade CPU for the Hypervisor</li>
-<li>Always reserve RAM &amp; Virtual RAM &lt; Physical RAM</li>
-<li>Use SSDs or other high speed disk for the Segstore - Do not share physical disks between hosts</li>
 <li>Do not use hyperthreading</li>
+<li>Do not share physical disks between hosts</li>
+<li>Do not over provision CPU Use a Server Grade CPU for the Hypervisor
+<br></li>
+<li><strong>Do's:</strong> ✅</li>
+<li>Allow resources Hypervisor overhead</li>
+<li>Always reserve Virtual RAM / Physical RAM</li>
+<li>Use SSDs or other high speed disk for the Segstore</li>
 <li>Apply BIOS power settings for maximum performance</li>
 </ul>
+<hr />
 <h2 id="steel-head-v-and-riverbed-bypass-nic">Steel Head-v and Riverbed Bypass NIC</h2>
 <p>Riverbed Bypass NIC-A physical card for the virtual device.</p>
 <ul>
@@ -540,7 +661,8 @@
 <li>ESXI driver available from the support website Under related Software</li>
 <li><strong>Hyper-V &amp; KVM support</strong></li>
 </ul>
-<p><img alt="" src="../images/bypass-nic.png" /></p>
+<p><img alt="bypass-nic " src="../images/bypass-nic.png" /></p>
+<hr />
 <h2 id="deployment-methods-physical-in-path">Deployment Methods: Physical In-Path</h2>
 <ul>
 <li>LAN &amp; WAN Connected</li>
@@ -550,6 +672,7 @@
 <li>Failover Scenarios</li>
 </ul>
 <p><img alt="inpass-diagram" src="../images/inpass-diagram.png" /></p>
+<hr />
 <h2 id="deployment-methods-virtual-in-path">Deployment Methods: Virtual In-Path</h2>
 <ul>
 <li>WAN physically connected - in-paths interfaces used for optimization</li>
@@ -560,6 +683,7 @@
 <li>Layer-4 Switch</li>
 </ul>
 <p><img alt="client-accelerator" src="../images/client-accelerator.png" /></p>
+<hr />
 <h2 id="deployment-methods-cloud-optimization-cloud-computing">Deployment Methods - Cloud Optimization Cloud Computing</h2>
 <ul>
 <li><strong>Private cloud:</strong></li>
@@ -574,17 +698,18 @@
 <li>As the name implies.</li>
 </ul>
 <p><img alt="deployment-methods" src="../images/deployment-methods2.png" /></p>
+<hr />
 <h2 id="deployment-methods-network-asymmetry">Deployment Methods &amp; Network Asymmetry</h2>
 <ul>
 <li>Network Asymmetry Affects Optimization</li>
 <li>Asymmetric Routing (AR) can be disruptive in optimized environments!</li>
 <li>SteelHeads need two-way traffic to optimize, regardless of topology:</li>
 <li>In-path</li>
-<li>virtual in-path<blockquote>
+<li>virtual in-path</li>
+</ul>
+<blockquote>
 <p>Virtual in-path can also be a solution, more later</p>
 </blockquote>
-</li>
-</ul>
 <p><img alt="asymmetric-routing" src="../images/inpass-diagram.png" /></p>
 <ul>
 <li>As a result the initial connection will take longer, or even fail SteelHeads will pass through all IP pairs for 24 hours when AR detected. This is to avoid reoccurring fallures</li>
@@ -594,6 +719,7 @@
 <blockquote>
 <p><em>Remember </em><em>nothing</em><em> happens until we see a </em><em>SYN message</em><em>.</em></p>
 </blockquote>
+<hr />
 <h2 id="enhanced-auto-discovery-ead">Enhanced Auto Discovery (EAD)</h2>
 <ul>
 <li>
@@ -610,10 +736,17 @@
 </ul>
 </li>
 </ul>
-<p><img alt="auto-discovery-flow" src="../images/ead-probe.png" />
-- <strong>Why not?</strong>
-  - May need to be disabled in certain SaaS backhaul deployments, or when overcoming egregious WAN latency such as double satellite</p>
+<p><img alt="auto-discovery-flow" src="../images/ead-probe.png" /></p>
+<ul>
+<li>
+<p><strong>Why Not Use EAD?</strong></p>
+</li>
+<li>
+<p>May need to be disabled in certain SaaS backhaul deployments, or when overcoming egregious WAN latency such as double satellite</p>
+</li>
+</ul>
 <p><img alt="layer2" src="../images/auto-discovery--note.png" /></p>
+<hr />
 <h2 id="wireshark-pcap-of-ead-traffic">Wireshark PCAP of EAD traffic</h2>
 <pre><code class="language-log">Options: (28 bytes), Maximum segment size, No-Operation (NOP)
 Maximum segment size: 1460 bytes
@@ -637,6 +770,7 @@ Riverbed Probe: Probe Query Info Length: 4
 No-Operation (NOP) End of Option List (EOL)
 </code></pre>
 <p><img alt="ead-probe" src="../images/ead-probe.png" /></p>
+<hr />
 <h2 id="transparency-options-field">Transparency Options Field</h2>
 <blockquote>
 <p>Carried in EVERY packet, after SYN and SYN/ACK</p>
@@ -649,23 +783,163 @@ No-Operation (NOP) End of Option List (EOL)
 <li>Interceptors</li>
 <li>SteelCentral devices</li>
 <li>Contains pseudo Src/Dest IP and ports</li>
-<li>Effectively NAT/PAT on egress of SH</li>
+<li>Effectively NAT/PAT on egress of steelhead</li>
 </ul>
 <p><img alt="transparency-options" src="../images/transparency-options.png" /></p>
+<hr />
 <h2 id="why-use-different-modes">Why use different modes?</h2>
 <ul>
 <li>Honestly, in most circumstances, correct addressing is fine however it does depend on the Steel Head deployment method.</li>
-<li>In SD-WAN environments, full transparency is required so that the SD-WAN policy in place to use a different bearer based on the application or any 5 tuples.
-<strong>Disadvantages of transparency</strong></li>
+<li>In SD-WAN environments, full transparency is required so that the SD-WAN policy in place to use a different bearer based on the application or any 5 tuples.</li>
+<li>Disadvantages of transparency:</li>
 <li>You lose a feature called Connection pooling, where 20 TCP connections are pre-established between every peer. This skips the need for a 3-way handshake when a session over the WAN is initiated.****</li>
 </ul>
+<hr />
+<h2 id="management-and-configuration-mgmt-config">Management and Configuration (Mgmt &amp; Config)</h2>
+<blockquote>
+<p>Management is available on all interfaces by default</p>
+</blockquote>
+<ul>
+<li>Rest API for special purposes such as automation</li>
+<li>Graphical User Interface via HTTP / HTTPS</li>
+<li>MIB downloadable from the GUI</li>
+<li>Telnet <em>(disabled by default)</em></li>
+<li>Rest API</li>
+<li>SNMP</li>
+<li>SSH</li>
+<li>BMC</li>
+</ul>
+<blockquote>
+<p>Best Practice: Always use the SCC.</p>
+</blockquote>
+<ul>
+<li><strong>CLI Command Entry Modes</strong></li>
+<li>User</li>
+<li>Enable</li>
+<li>Config</li>
+</ul>
+<hr />
+<h2 id="riverbed-steelhead-show-interface">Riverbed SteelHead Show Interface</h2>
+<pre><code class="language-sh">VCX255-A #sh int inpath0_0
+Interface: inpath0 0
+State: Up
+Interface type: ethernet
+IP address: 10.1.30.125
+Netmask: 255.255.255.0
+IPv6 link-local address: fe80::20c:29ff: fe28:b93d/64
+MTU: 1500
+HW address: 00:0C:29:28:B9:3D
+Traffic status: Normal
+HW blockable: no
+Counters cleared date: 2019/12/12 11:43:00
+RX bytes: 6526710
+RX mcast packets: 51827
+errors: 0
+RX overruns: 100
+TX bytes: 1548
+</code></pre>
+<hr />
+<h2 id="riverbed-steelhead-configuration-wizard">Riverbed SteelHead configuration wizard</h2>
+<pre><code class="language-sh">VCX255-A (config) conf jump-start
+Step 1: Hostname? (VCX255-A1)
+Step 2: Use DHCP on primary interface? [no]
+Step 3: Primary IP address? [10.1.30.25)
+Step 4: Netmask? [255.255.255.0]
+Step 5: Default gateway? [10.1.30.254]
+Step 6: Primary DNS server? (10.1.30.102)
+Step 7: Domain name? [training.local]
+Step 8: Admin password?
+Step 9: SMTP server?
+Step 10: Notification email address?
+Step 11: Set the primary interface speed? [auto]
+Step 12: Set the primary interface duplex? [auto]
+Step 13: Would you like to activate the in-path configuration? [yes]
+Step 14: In-Path IP address? (10.1.30.125)
+Step 15: In-Path Netmask? 1255.255.255.01
+Step 16: In-Path Default gateway? [10.1.30.254)
+Step 17: Set the in-path:LAN interface aspeed? [auto]
+Step 18: Set the In-path: LAN interface duplex? [auto]
+Step 19: Set the in-path:WAN interface speed? [auto]
+Step 20: Set the in-path: WAN Interface duplex? [auto]
+</code></pre>
+<hr />
+<h2 id="network-interface-configuration">Network interface configuration</h2>
+<pre><code class="language-ini">interface aux description
+interface aux dhcp
+interface aux dhcp dynamic-dns
+no interface aux dhcpv6
+no interface aux shutdown
+interface aux dhcpv6 dynamic-dns
+interface aux mtu &quot;1588&quot;
+interface aux speed &quot;auto&quot;
+interface inpath8 8 description &quot;&quot; no interface inpath8_8 dhcp
+no interface inpath8 8 dhcp dynamic-dns na interface inpath8_8 dhcpv6
+no interface inpath8 8 dhcpv6 dynamic-dns
+no interface interface
+inpath0 8 force-Mdi-x enable inpath8_8 ip address 18.1.58.125 /24
+interface inpath8 8 mtu &quot;1588&quot;
+interface interface
+inpath8_8 napi-weight &quot;128&quot; inpath8_8 shutdown
+interface inpath8_8 speed &quot;auto&quot;
+no interface shutdown
+inpathB 8 txqueuelen &quot;188&quot; lo description
+</code></pre>
+<hr />
+<h2 id="housekeeping-licensing-structure">Housekeeping - Licensing Structure</h2>
+<ul>
+<li>Licenses are small strings of text tied to the HW</li>
+<li>Example: LK1-SH40SSL-0000-0000-5-8B40-0361-F11D</li>
+<li>Basic Licenses plus options and sizing can be added by:</li>
+<li>CLI</li>
+<li>GUI</li>
+<li>Call Home function</li>
+</ul>
+<hr />
+<h2 id="housekeeping-export-flow-statistics">Housekeeping - Export Flow Statistics</h2>
+<ul>
+<li>NetFlow and other Flow Data Collectors gather network statistics about network hosts, protocols and ports, peak usage times, traffic paths, and others</li>
+<li>The flow data collectors update flow records with information pertaining to each packet traversing a specified network interface</li>
+</ul>
+<hr />
+<h2 id="housekeeping-flow-data-component-basics">Housekeeping - Flow Data Component Basics</h2>
+<ul>
+<li>Exporter - A device that sees the data flows going through the network, such as a SteelHead or a router</li>
+<li>Collector - A server or appliance designed to aggregate data sent to it by NetFlow Exporter, such as Steel Central Flow Gateway</li>
+<li>Analyzer - A collection of tools (usually provided in conjunction with a collector) used to analyze the data and provide relevant data summaries and graphs, such as SteelCentral NetProfiler</li>
+</ul>
+<hr />
+<h2 id="housekeeping-configuration-management">Housekeeping - Configuration Management</h2>
+<ul>
+<li>The Configuration is held in binary format</li>
+<li>Pasting a text file to the CLI is NOT recommended</li>
+<li>Configuration files are backed up locally with a .bak copy and can be uploaded manually to a server - Files are also regularly backed up to the SCC</li>
+<li>Files can be saved locally before every change</li>
+<li>Creates an easy rollback if required in a service window</li>
+</ul>
+<hr />
+<h2 id="authentication">Authentication</h2>
+<p>The following user authentication methods are available for administrative and monitoring purposes:</p>
+<p>🔒 Local
+🔒 SAML
+🔒 RADIUS
+🔒 TACACS+</p>
+<p>Custom Shell profiles and AV pairs are required for SteelHeads This is covered by many knowledgebase articles.</p>
+<ul>
+<li>Admin Account: Administrator privileges</li>
+<li>Monitor Account: Read only access</li>
+<li>Gist is available for Cisco ACS environments in article 516158</li>
+<li>Typically local site admins don't need RW access as everything <strong>Should be managed via an SCC</strong>.</li>
+</ul>
+<blockquote>
+<p>If you make changes locally and don't reflect them on the SCC, they'll be wiped next time there is a push.</p>
+</blockquote>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-05-23T12:27:35+10:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-05-23</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-05-23T14:42:54+10:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-05-23</span>
       
     
   </small>
