@@ -8,9 +8,6 @@ repo_url: https://github.com/jodisfields/Riverbed-RCPE
 # theme configuration
 theme:
   name: material
-  analytics:
-    provider: google
-    property: G-DMP6P2VHDS
   font:
     text: Roboto
     code: Roboto Mono
@@ -36,6 +33,9 @@ theme:
         name: Switch to light mode
 # extra configuration
 extra:
+  analytics:
+    provider: google
+    property: G-36SY15Z911
   social:
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/u/jodis
