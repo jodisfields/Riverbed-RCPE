@@ -278,6 +278,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../license-tiers/" class="md-nav__link">
+        License Tiers
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -337,13 +352,6 @@
         <li class="md-nav__item">
   <a href="#deployment-methods-virtual-in-path" class="md-nav__link">
     Deployment Methods: Virtual In-Path
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#-wan-physically-connected-in-paths-interfaces-used-for-optimization" class="md-nav__link">
-    - WAN physically connected - in-paths interfaces used for optimization
   </a>
   
 </li>
@@ -453,13 +461,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#-wan-physically-connected-in-paths-interfaces-used-for-optimization" class="md-nav__link">
-    - WAN physically connected - in-paths interfaces used for optimization
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#deployment-methods-cloud-optimization-cloud-computing" class="md-nav__link">
     Deployment Methods - Cloud Optimization Cloud Computing
   </a>
@@ -520,179 +521,79 @@
 
 
 <h1 id="quick-notes">Quick Notes</h1>
-<ul>
-<li>License Tiers</li>
-</ul>
-<p><img alt="license-tiers" src="../assets/license-levels.png" /></p>
 <h2 id="steelhead-v-best-practices-for-performance">SteelHead-V Best Practices for Performance</h2>
 <ul>
-<li>
-<p>Do not share NICS and use at least 1Gbps</p>
-</li>
-<li>
-<p>Allow resources Hypervisor overhead</p>
-</li>
-<li>
-<p>Do not over provision CPU Use a Server Grade CPU for the Hypervisor</p>
-</li>
-<li>
-<p>Always reserve RAM &amp; Virtual RAM &lt; Physical RAM</p>
-</li>
-<li>
-<p>Use SSDs or other high speed disk for the Segstore - Do not share physical disks between hosts</p>
-</li>
-<li>
-<p>Do not use hyperthreading</p>
-</li>
-<li>
-<p>Apply BIOS power settings for maximum performance</p>
-</li>
+<li>Do not share NICS and use at least 1Gbps</li>
+<li>Allow resources Hypervisor overhead</li>
+<li>Do not over provision CPU Use a Server Grade CPU for the Hypervisor</li>
+<li>Always reserve RAM &amp; Virtual RAM &lt; Physical RAM</li>
+<li>Use SSDs or other high speed disk for the Segstore - Do not share physical disks between hosts</li>
+<li>Do not use hyperthreading</li>
+<li>Apply BIOS power settings for maximum performance</li>
 </ul>
 <h2 id="steel-head-v-and-riverbed-bypass-nic">Steel Head-v and Riverbed Bypass NIC</h2>
-<p>Riverbed Bypass NIC-A physical card for the virtual device.</p>
-<ul>
-<li>
-<p><strong>ESX/ESXI</strong></p>
-</li>
-<li>
-<p>Direct Path feature</p>
-</li>
-<li>
-<p>Allows SteelHead-v to contral the bypass hardware:</p>
-</li>
-<li>
-<p>ESXI driver available from the support website Under related Software</p>
-</li>
-<li>
-<p><strong>Hyper-V &amp; KVM support</strong></p>
-</li>
-</ul>
+<p>Riverbed Bypass NIC-A physical card for the virtual device.
+- <strong>ESX/ESXI</strong>
+  - Direct Path feature
+  - Allows SteelHead-v to contral the bypass hardware:
+  - ESXI driver available from the support website Under related Software
+- <strong>Hyper-V &amp; KVM support</strong></p>
 <h2 id="deployment-methods-physical-in-path">Deployment Methods: Physical In-Path</h2>
 <ul>
-<li>
-<p>LAN &amp; WAN Connected</p>
-</li>
-<li>
-<p>We will look into more detail on:</p>
-</li>
-<li>
-<p>Serial clusters Parallel clusters</p>
-</li>
-<li>
-<p>Simplified Routing</p>
-</li>
-<li>
-<p>Failover Scenarios</p>
-</li>
+<li>LAN &amp; WAN Connected</li>
+<li>We will look into more detail on:</li>
+<li>Serial clusters Parallel clusters</li>
+<li>Simplified Routing</li>
+<li>Failover Scenarios
+<img alt="inpass-diagram" src="../images/inpass-diagram.png" /></li>
 </ul>
-<p><img alt="inpass-diagram" src="../assets/inpass-diagram.png" /></p>
 <h2 id="deployment-methods-virtual-in-path">Deployment Methods: Virtual In-Path</h2>
-<h2 id="-wan-physically-connected-in-paths-interfaces-used-for-optimization">- WAN physically connected - in-paths interfaces used for optimization</h2>
 <ul>
-<li>
-<p>We will look into more detail on:</p>
-</li>
-<li>
-<p>Policy-based Routing</p>
-</li>
-<li>
-<p>WCCP</p>
-</li>
-<li>
-<p>Interceptor</p>
-</li>
-<li>
-<p>Layer-4 Switch</p>
-</li>
+<li>WAN physically connected - in-paths interfaces used for optimization</li>
+<li>We will look into more detail on:</li>
+<li>Policy-based Routing</li>
+<li>WCCP</li>
+<li>Interceptor</li>
+<li>Layer-4 Switch
+<img alt="client-accelerator" src="../images/client-accelerator.png" /></li>
 </ul>
-<p><img alt="client-accelerator" src="../assets/client-accelerator.png" /></p>
 <h2 id="deployment-methods-cloud-optimization-cloud-computing">Deployment Methods - Cloud Optimization Cloud Computing</h2>
 <ul>
-<li>
-<p><strong>Private cloud:</strong></p>
-</li>
-<li>
-<p>Resources match demand, but can be slow or expensive to adapt Management of resources without restrictions</p>
-</li>
-<li>
-<p>Security Compliance</p>
-</li>
-<li>
-<p>High Availability, but at a cost</p>
-</li>
-<li>
-<p><strong>Public cloud:</strong></p>
-</li>
-<li>
-<p>Scalable and agile</p>
-</li>
-<li>
-<p>Consumer-based billing</p>
-</li>
-<li>
-<p>High Availability</p>
-</li>
-<li>
-<p><strong>Hybrid cloud:</strong></p>
-</li>
-<li>
-<p>As the name implies.</p>
-</li>
+<li><strong>Private cloud:</strong></li>
+<li>Resources match demand, but can be slow or expensive to adapt Management of resources without restrictions</li>
+<li>Security Compliance</li>
+<li>High Availability, but at a cost</li>
+<li><strong>Public cloud:</strong></li>
+<li>Scalable and agile</li>
+<li>Consumer-based billing</li>
+<li>High Availability</li>
+<li><strong>Hybrid cloud:</strong></li>
+<li>As the name implies.</li>
 </ul>
 <h2 id="deployment-methods-network-asymmetry">Deployment Methods &amp; Network Asymmetry</h2>
 <ul>
-<li>
-<p>Network Asymmetry Affects Optimization</p>
-</li>
-<li>
-<p>Asymmetric Routing (AR) can be disruptive in optimized environments!</p>
-</li>
-<li>
-<p>SteelHeads need two-way traffic to optimize, regardless of topology:</p>
-</li>
-<li>
-<p>In-path or virtual in-path</p>
-</li>
-<li>
-<p>Virtual in-path can also be a solution, more later</p>
-</li>
-<li>
-<p>As a result:</p>
-</li>
-<li>
-<p>The initial connection will take longer, or even fail SteelHeads will pass through all IP pairs for 24 hours when AR detected. This is to avoid reoccurring fallures</p>
-</li>
-</ul>
-<p>-The table can be flushed manually, but must be done on all affected SteelHeads</p>
-<blockquote>
+<li>Network Asymmetry Affects Optimization</li>
+<li>Asymmetric Routing (AR) can be disruptive in optimized environments!</li>
+<li>SteelHeads need two-way traffic to optimize, regardless of topology:</li>
+<li>In-path or virtual in-path</li>
+<li>Virtual in-path can also be a solution, more later</li>
+<li>As a result:</li>
+<li>The initial connection will take longer, or even fail SteelHeads will pass through all IP pairs for 24 hours when AR detected. This is to avoid reoccurring fallures
+  -The table can be flushed manually, but must be done on all affected SteelHeads<blockquote>
 <p>Remember NOTHING happens until we see a SYN message to start optimization Consider manual reset or an auto-kickoff rule</p>
 </blockquote>
+</li>
+</ul>
 <h2 id="enhanced-auto-discovery-ead-overview-why-use-enhanced">Enhanced Auto Discovery (EAD) - Overview Why Use Enhanced?</h2>
 <ul>
-<li>
-<p>Default since RIOS version 5.5.4</p>
-</li>
-<li>
-<p>Used to find the LAST Steel Head, not the first</p>
-</li>
-<li>
-<p>Useful on double WAN hops</p>
-</li>
-<li>
-<p>Also useful in serial deployments, but peering rules are much better</p>
-</li>
-<li>
-<p>Faster to fail when the server is not available</p>
-</li>
-<li>
-<p>Faster to detect network asymmetry</p>
-</li>
-<li>
-<p><strong>Why not?</strong></p>
-</li>
-<li>
-<p>May need to be disabled in certain SaaS backhaul deployments, or when overcoming egregious WAN latency such as double satellite</p>
-</li>
+<li>Default since RIOS version 5.5.4</li>
+<li>Used to find the LAST Steel Head, not the first</li>
+<li>Useful on double WAN hops</li>
+<li>Also useful in serial deployments, but peering rules are much better</li>
+<li>Faster to fail when the server is not available</li>
+<li>Faster to detect network asymmetry</li>
+<li><strong>Why not?</strong></li>
+<li>May need to be disabled in certain SaaS backhaul deployments, or when overcoming egregious WAN latency such as double satellite</li>
 </ul>
 <h2 id="wireshark-pcap-of-ead-traffic">Wireshark PCAP of EAD traffic</h2>
 <pre><code class="language-log">Options: (28 bytes), Maximum segment size, No-Operation (NOP)
@@ -718,45 +619,21 @@ No-Operation (NOP) End of Option List (EOL)
 </code></pre>
 <h2 id="transparency-options-field">Transparency Options Field</h2>
 <blockquote>
-<p>Carried in EVERY packet, after SYN and SYN/ACK</p>
+<p>Carried in EVERY packet, after SYN and SYN/ACK
+- Configured on in-path rules: Can be with Fixed Target (on cli and in-path only)
+- Filter on Wireshark: tcp.options.rvbd.trpy
+- 4e labels packets as "WAN side Optimized" for use by:
+  - SteelHeads
+  - Interceptors
+  - SteelCentral devices
+  - Contains pseudo Src/Dest IP and ports
+  - Effectively NAT/PAT on egress of SH</p>
 </blockquote>
-<ul>
-<li>
-<p>Configured on in-path rules: Can be with Fixed Target (on cli and in-path only)</p>
-</li>
-<li>
-<p>Filter on Wireshark: tcp.options.rvbd.trpy</p>
-</li>
-<li>
-<p>4e labels packets as "WAN side Optimized" for use by:</p>
-</li>
-<li>
-<p>SteelHeads</p>
-</li>
-<li>
-<p>Interceptors</p>
-</li>
-<li>
-<p>SteelCentral devices</p>
-</li>
-<li>
-<p>Contains pseudo Src/Dest IP and ports</p>
-</li>
-<li>
-<p>Effectively NAT/PAT on egress of SH</p>
-</li>
-</ul>
 <h2 id="why-use-different-modes">Why use different modes?</h2>
 <ul>
-<li>
-<p>Honestly, in most circumstances, correct addressing is fine however it does depend on the Steel Head deployment method.</p>
-</li>
-<li>
-<p>In SD-WAN environments, full transparency is required so that the SD-WAN policy in place to use a different bearer based on the application or any 5 tuples.</p>
-</li>
-</ul>
-<p><strong>Disadvantages of transparency</strong></p>
-<ul>
+<li>Honestly, in most circumstances, correct addressing is fine however it does depend on the Steel Head deployment method.</li>
+<li>In SD-WAN environments, full transparency is required so that the SD-WAN policy in place to use a different bearer based on the application or any 5 tuples.
+<strong>Disadvantages of transparency</strong></li>
 <li>You lose a feature called Connection pooling, where 20 TCP connections are pre-established between every peer. This skips the need for a 3-way handshake when a session over the WAN is initiated.****</li>
 </ul>
 
@@ -765,7 +642,7 @@ No-Operation (NOP) End of Option List (EOL)
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-05-23T11:14:38+10:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-05-23</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-05-23T11:54:32+10:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-05-23</span>
       
         <br>
         Created:
@@ -792,7 +669,7 @@ No-Operation (NOP) End of Option List (EOL)
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../first-lab/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Knowledge check" rel="prev">
+        <a href="../license-tiers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: License Tiers" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -801,7 +678,7 @@ No-Operation (NOP) End of Option List (EOL)
               <span class="md-footer__direction">
                 Previous
               </span>
-              Knowledge check
+              License Tiers
             </div>
           </div>
         </a>
