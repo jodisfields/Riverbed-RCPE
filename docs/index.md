@@ -42,20 +42,20 @@ Riverbed RCPE Professional: Implement WAN Optimization Course Notes and Discussi
 - [Course Specific Labs](https://www.riverbedlab.com/courses/rcpe-p-iopt)
 - [Zoom Meeting](https://riverbed.zoom.us/j/7771771418?pwd=aWNvM0FBcUVUYkNpaXdtZFRNak10QT09)
 - [Technet Article](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/the-riverbed-field-guide-for-the-ad-admin/ba-p/258868)
-- [Welcome and Logistics_RCPE-D](https://github.com/jodisfields/tree/master/pdf/01.pdf)
-- [Describe how WAN Optimization Works-D](https://github.com/jodisfields/tree/master/pdf/02.pdf)
-- [Describe the Solution Architecture-D](https://github.com/jodisfields/tree/master/pdf/03.pdf)
-- [Manage Your Appliances-D](https://github.com/jodisfields/tree/master/pdf/04.pdf)
-- [Control Optimization with In-path & Peering Rules-D](https://github.com/jodisfields/tree/master/pdf/05.pdf)
-- [Deploy the SteelCentral Controller for SteelHead-D](https://github.com/jodisfields/tree/master/pdf/06.pdf)
-- [Optimize HTTP Traffic-D](https://github.com/jodisfields/tree/master/pdf/07.pdf)
-- [Optimize SSL Traffic-D](https://github.com/jodisfields/tree/master/pdf/08.pdf)
-- [Customize Windows Traffic in an Active Directory Environment-D](https://github.com/jodisfields/tree/master/pdf/09.pdf)
-- [Optimize Other Application Layers-D](https://github.com/jodisfields/tree/master/pdf/10.pdf)
-- [Configure SteelHead SaaS Accelerator-D](https://github.com/jodisfields/tree/master/pdf/11.pdf)
-- [Describe SteelHead Cloud Solutions-D](https://github.com/jodisfields/tree/master/pdf/12.pdf)
-- [Monitor and Report on Solution Performance-D](https://github.com/jodisfields/tree/master/pdf/13.pdf)
-- [Course Summary-D](https://github.com/jodisfields/tree/master/pdf/14.pdf)
+- [Welcome and Logistics_RCPE-D](https://github.com/jodisfields/Riverbed-RCPE/tree/main/pdf/01.pdf)
+- [Describe how WAN Optimization Works-D](https://github.com/jodisfields/Riverbed-RCPE/tree/main/pdf/02.pdf)
+- [Describe the Solution Architecture-D](https://github.com/jodisfields/Riverbed-RCPE/tree/main/pdf/03.pdf)
+- [Manage Your Appliances-D](https://github.com/jodisfields/Riverbed-RCPE/tree/main/pdf/04.pdf)
+- [Control Optimization with In-path & Peering Rules-D](https://github.com/jodisfields/Riverbed-RCPE/tree/main/pdf/05.pdf)
+- [Deploy the SteelCentral Controller for SteelHead-D](https://github.com/jodisfields/Riverbed-RCPE/tree/main/pdf/06.pdf)
+- [Optimize HTTP Traffic-D](https://github.com/jodisfields/Riverbed-RCPE/tree/main/pdf/07.pdf)
+- [Optimize SSL Traffic-D](https://github.com/jodisfields/Riverbed-RCPE/tree/main/pdf/08.pdf)
+- [Customize Windows Traffic in an Active Directory Environment-D](https://github.com/jodisfields/Riverbed-RCPE/tree/main/pdf/09.pdf)
+- [Optimize Other Application Layers-D](https://github.com/jodisfields/Riverbed-RCPE/tree/main/pdf/10.pdf)
+- [Configure SteelHead SaaS Accelerator-D](https://github.com/jodisfields/Riverbed-RCPE/tree/main/pdf/11.pdf)
+- [Describe SteelHead Cloud Solutions-D](https://github.com/jodisfields/Riverbed-RCPE/tree/main/pdf/12.pdf)
+- [Monitor and Report on Solution Performance-D](https://github.com/jodisfields/Riverbed-RCPE/tree/main/pdf/13.pdf)
+- [Course Summary-D](https://github.com/jodisfields/Riverbed-RCPE/tree/main/pdf/14.pdf)
 
 ---
 
@@ -73,7 +73,7 @@ Riverbed RCPE Professional: Implement WAN Optimization Course Notes and Discussi
 
 ```bash
 # Clone this project
-git clone https://github.com/jodisfields/Riverbed-RCPE.git
+git clone https://github.com/jodisfields/Riverbed-RCPE/Riverbed-main.git
 
 # Access
 cd Riverbed-RCPE
