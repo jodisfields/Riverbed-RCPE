@@ -1,2 +1,61 @@
+# site configuration
 site_name: RCPE Professional
-theme: material
+site_author: Jodis Fields
+site_description: Riverbed RCPE Professional Implement WAN Optimization Course Notes and Discussion
+repo_name: jodisfields/Riverbed-RCPE
+repo_url: https://github.com/jodisfields/Riverbed-RCPE
+# theme configuration
+theme:
+  name: material
+  icon:
+    logo: material/library-outline
+  features:
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+# extra configuration
+extra:
+  analytics:
+    provider: google
+    property: G-DMP6P2VHDS
+  social:
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/jodis
+      name: DockerHub
+    - icon: fontawesome/brands/github
+      link: https://github.com/jodisfields
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/jodisfields
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:contact@fieldbox.me
+      name: Email
+  generator: true
+# plugin configuration
+plugins:
+  - search:
+      lang: en
+  - git-revision-date-localized:
+      type: timeago
+      locale: en
+      timezone: Australia/Sydney
+      fallback_to_build_date: true
+      enable_creation_date: true
+      enabled: true
+# markdown configuration
+markdown_extensions:
+  - tables
