@@ -3,27 +3,15 @@
  <img width=auto height=auto src="https://www.riverbed.com/sites/default/files/riverbed-logo.png" alt="Riverbed logo"></a>
 </p>
 
-<br>
-
 <h2 align="center">Riverbed RCPE Professional</h2>
 
-<p align="center"> Riverbed RCPE Professional: Implement WAN Optimization Course Notes and Discussion.
-    <br>
-</p>
+<p align="center"> Riverbed RCPE Professional: Implement WAN Optimization Course Notes and Discussion.</p>
 
 ---
 
-<br>
+## 🧐 About
 
-> **Note: This content is intended for personal reference and collaboration only!**
-
-<br>
-
-## 🧐 About <a name = "about"></a>
-
-<br>
-
-Riverbed RCPE Professional: Implement WAN Optimization Course Notes and Discussion.
+Riverbed RCPE Professional: Implement WAN Optimization Course Notes and Discussion. This content is intended for personal reference and collaboration only!
 
 - **Course Name:** RCPE Professional: Implement WAN Optimization
 - **Dates:** 23rd - 27th of May 2022
@@ -32,18 +20,14 @@ Riverbed RCPE Professional: Implement WAN Optimization Course Notes and Discussi
   - 0700 AEST
 - **Trainer:** Pat Robson
 
-<br>
-
-## 📚 Reference Material <a name = "references"></a>
+## 📚 Reference Material
 
 - [Riverbed Lab Dashboard](https://www.riverbedlab.com/dashboard)
 - [Course Specific Labs](https://www.riverbedlab.com/courses/rcpe-p-iopt)
 - [Zoom Meeting](https://riverbed.zoom.us/j/7771771418?pwd=aWNvM0FBcUVUYkNpaXdtZFRNak10QT09)
 - [Technet Article](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/the-riverbed-field-guide-for-the-ad-admin/ba-p/258868)
 
-<br>
-
-## ⛏️ Built Using <a name = "built_using"></a>
+## ⛏️ Built Using
 
 - [Mkdocs](https://www.mkdocs.org/)
 - [Mkdocs Material](https://squidfunk.github.io/mkdocs-material/getting-started/)
@@ -51,15 +35,9 @@ Riverbed RCPE Professional: Implement WAN Optimization Course Notes and Discussi
 - [Git](https://git-scm.com/)
 - [Python](https://www.python.org/)
 
-<br>
-
-## 🚀 Deployment <a name = "deployment"></a>
-
-<br>
+## 🚀 Deployment
 
 > Before starting you need to have [Git](https://git-scm.com) and [Python](https://python.org/download) installed.
-
-<br>
 
 ```bash
 # Clone this project
@@ -78,8 +56,6 @@ mkdocs serve
 Navigate to http://localhost:8000
 ```
 
-<br>
-
-## 📝 Acknowledgements <a name = "acknowledgements"></a>
+## 📝 Acknowledgements
 
 - [Riverbed](https://www.riverbed.com/)
