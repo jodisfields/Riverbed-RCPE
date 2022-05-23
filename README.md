@@ -40,7 +40,6 @@ Riverbed RCPE Professional: Implement WAN Optimization Course Notes and Discussi
 
 - [Riverbed Lab Dashboard](https://www.riverbedlab.com/dashboard)
 - [Course Specific Labs](https://www.riverbedlab.com/courses/rcpe-p-iopt)
-- [Zoom Meeting](https://riverbed.zoom.us/j/7771771418?pwd=aWNvM0FBcUVUYkNpaXdtZFRNak10QT09)
 - [Technet Article](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/the-riverbed-field-guide-for-the-ad-admin/ba-p/258868)
 - [Welcome and Logistics_RCPE-D](https://github.com/jodisfields/Riverbed-RCPE/tree/main/pdf/01.pdf)
 - [Describe how WAN Optimization Works-D](https://github.com/jodisfields/Riverbed-RCPE/tree/main/pdf/02.pdf)
