@@ -72,7 +72,7 @@ Riverbed RCPE Professional: Implement WAN Optimization Course Notes and Discussi
 
 ```bash
 # Clone this project
-git clone https://github.com/jodisfields/Riverbed-RCPE/Riverbed-main.git
+git clone https://github.com/jodisfields/Riverbed-RCPE.git
 
 # Access
 cd Riverbed-RCPE
