@@ -1,0 +1,1162 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Riverbed RCPE Professional Implement WAN Optimization Course Notes and Discussion">
+      
+      
+        <meta name="author" content="Jodis Fields">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+    
+    
+      
+        <title>Lab 3 - RCPE Professional</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/timeago.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-36SY15Z911"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-36SY15Z911",{page_path:e.pathname})})})</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-36SY15Z911"></script>
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="RCPE Professional" class="md-header__button md-logo" aria-label="RCPE Professional" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14.27 10.64 13A11.242 11.242 0 0 0 5 10.18v6.95c2.61.34 5 1.34 7 2.82 2-1.48 4.39-2.48 7-2.82v-6.95c-2.16.39-4.09 1.39-5.64 2.82M19 8.15c.65-.1 1.32-.15 2-.15v11c-3.5 0-6.64 1.35-9 3.54C9.64 20.35 6.5 19 3 19V8c.68 0 1.35.05 2 .15 2.69.41 5.1 1.63 7 3.39 1.9-1.76 4.31-2.98 7-3.39M12 6c.27 0 .5-.1.71-.29.19-.21.29-.44.29-.71s-.1-.5-.29-.71C12.5 4.11 12.27 4 12 4s-.5.11-.71.29c-.18.21-.29.45-.29.71s.11.5.29.71c.21.19.45.29.71.29m2.12 1.12a2.997 2.997 0 1 1-4.24-4.24 2.997 2.997 0 1 1 4.24 4.24Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RCPE Professional
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lab 3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jodisfields/Riverbed-RCPE" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jodisfields/Riverbed-RCPE
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="RCPE Professional" class="md-nav__button md-logo" aria-label="RCPE Professional" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14.27 10.64 13A11.242 11.242 0 0 0 5 10.18v6.95c2.61.34 5 1.34 7 2.82 2-1.48 4.39-2.48 7-2.82v-6.95c-2.16.39-4.09 1.39-5.64 2.82M19 8.15c.65-.1 1.32-.15 2-.15v11c-3.5 0-6.64 1.35-9 3.54C9.64 20.35 6.5 19 3 19V8c.68 0 1.35.05 2 .15 2.69.41 5.1 1.63 7 3.39 1.9-1.76 4.31-2.98 7-3.39M12 6c.27 0 .5-.1.71-.29.19-.21.29-.44.29-.71s-.1-.5-.29-.71C12.5 4.11 12.27 4 12 4s-.5.11-.71.29c-.18.21-.29.45-.29.71s.11.5.29.71c.21.19.45.29.71.29m2.12 1.12a2.997 2.997 0 1 1-4.24-4.24 2.997 2.997 0 1 1 4.24 4.24Z"/></svg>
+
+    </a>
+    RCPE Professional
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jodisfields/Riverbed-RCPE" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jodisfields/Riverbed-RCPE
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Kerberos/" class="md-nav__link">
+        How does Kerberos work?
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../authentication/" class="md-nav__link">
+        Authentication
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../best-practice/" class="md-nav__link">
+        SteelHead Best Practices
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bonus/" class="md-nav__link">
+        Bonus Material Transcript
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bypass-nic/" class="md-nav__link">
+        SteelHead-V and Riverbed Bypass NIC
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cheetsheet/" class="md-nav__link">
+        Cheetsheet
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment-methods/" class="md-nav__link">
+        Deployment Methods
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ead/" class="md-nav__link">
+        Enhanced Auto Discovery (EAD)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../housekeeping/" class="md-nav__link">
+        Housekeeping
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab-1/" class="md-nav__link">
+        Lab 1
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab-2/" class="md-nav__link">
+        HOL5923: Create Web App Dashboards
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Lab 3
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab-4/" class="md-nav__link">
+        Lab 4
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../license-tiers/" class="md-nav__link">
+        License Tiers
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mgmt-and-config/" class="md-nav__link">
+        Management and Configuration
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-notes/" class="md-nav__link">
+        Quick notes
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ssl-tls-traffic/" class="md-nav__link">
+        Accelerate SSL/TLS Traffic
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transparency/" class="md-nav__link">
+        Transparency Options Field
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/jodisfields/Riverbed-RCPE/edit/master/docs/lab-3.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<div id="rdpGuide" role="tabpanel" class="tab-pane markdown-output active">
+<h1>HOL1192: Analyzing Auto Discovery Packets</h1>
+<h3>Introduction</h3>
+<p>In this scenario, you will be using Wireshark to analyze TCP dump captures created by the SteelHead appliance to
+observe the Enhanced Auto Discovery (EAD) process.</p>
+<p>In upcoming tasks, you will be establishing a new TCP connection to the shared server, initiating the Enhanced
+Auto Discovery (EAD) process.</p>
+<h4>Background Information</h4>
+<p>TCP Dump is a free and open source <strong>packet capture tool</strong> that runs from both the SteelHead CLI and
+the Management Console. It allows network administrators to intercept (capture) TCP/IP and other packets being
+transmitted or received over networks. TCP Dump was originally written in 1987 by Van Jacobson, Craig Leres and
+Steven McCanne who were, at the time, working in the <strong>Lawrence Berkeley Laboratory</strong> Network
+Research Group. Steven McCanne, Ph.D., went on to co-found Riverbed Technology in May 2002 and served as
+Riverbed's first CTO. TCP Dump is commonly used in conjunction with <strong>Wireshark</strong> to analyze
+network behavior, performance and applications that generate or receive network traffic. TCP Dump is also useful
+for analyzing network routing infrastructure and providing crucial traffic flow visibility, allowing network
+engineers to isolate and resolve complex problems.</p>
+<p><strong>Wireshark</strong> (originally named <strong>Ethereal</strong>) is a free and open-source <strong>packet
+capture and analyzer tool</strong> and is used for network troubleshooting, analysis, software and
+communications protocol development, and education. In the late 1990s, Gerald Combs, a computer science graduate
+of the University of Missouri–Kansas City, began writing Ethereal and released the first version around 1998.
+Combs, in 2006, accepted a job with <strong>CACE</strong> Technologies to continue development of the product,
+and subsequently changed its name from Ethereal to <strong>Wireshark</strong>. In 2010, <strong>Riverbed
+Technology</strong> acquired CACE and took over as the primary sponsor of Wireshark. <strong>Gerald Combs is
+the Director of Open Source Projects</strong> at Riverbed and lead developer in the Wireshark development
+team.</p>
+<h4>Tasks</h4>
+<ol>
+<li>Configure TCP Dump on SteelHead Appliance</li>
+<li>Generate Traffic to Capture Enhanced Auto Discovery (EAD) Probes</li>
+<li>Download TCP Dump Capture Files from the SteelHead</li>
+<li>Use Wireshark to Analyze TCP Dump Capture File</li>
+<li>Change Inner Channel Transparency Mode to Full Transparency</li>
+<li>Configure and Start a New TCP Dump</li>
+<li>Use Wireshark to Analyze the New Capture File</li>
+</ol>
+<hr>
+<h3>Task 1. Configure TCP Dump on SteelHead Appliance</h3>
+<h4>Objective</h4>
+<p>In this task, you will be creating a new TCP Dump capture job on the <strong>branch</strong> SteelHead appliance,
+<strong>n120-sh1</strong>.
+</p>
+<blockquote>
+<p>The captured traffic will contain packets that have traversed through the lan0_0 and wan0_0 interfaces on the
+SteelHead appliance, allowing us to identify the SteelHead auto discovery probe that will appear in the
+wan0_0 capture file.</p>
+</blockquote>
+<h4>Detailed Steps</h4>
+<ol>
+<li>
+<p>Using your Windows client, <strong>n21-pc</strong>, open <strong>Mozilla Firefox</strong> or
+<strong>Chrome</strong> from the Taskbar shortcut.
+</p>
+</li>
+<li>
+<p>In the bookmarks toolbar, expand the <strong>Branch Optimization</strong> folder and select the
+<strong>n120-sh1 SteelHead 1 (Path 1)</strong> SteelHead appliance.
+</p>
+</li>
+<li>
+<p>Login using the following credentials:</p>
+<pre><code>username:   admin
+password:   password</code></pre>
+</li>
+<li>
+<p>Using the branch SteelHead Web UI, navigate to <strong>Reports &gt; Diagnostics &gt; TCP Dumps</strong>.
+</p>
+</li>
+<li>
+<p>Click the <strong>Add a New TCP Dump</strong> button and specify the following capture criteria. Leave
+any unlisted fields at the default value, and <strong>do not click the "Add" button</strong> until
+instructed in the upcoming task.</p>
+<blockquote>
+<p>This is a time sensitive task that requires additional configuration in the next task.</p>
+</blockquote>
+<pre><code>Capture Name:           EADprobes
+In-Path Interfaces:     lan0_0 (Check)
+wan0_0 (Check)
+Capture Duration:       60 Seconds</code></pre>
+<p><img src="https://s3.amazonaws.com/edu-screenshots/legacy/119320170422102556.png" alt="screenshot"
+title="Screenshot"></p>
+</li>
+<li>
+<p>Leave the browser window open.</p>
+</li>
+</ol>
+<h4>Review</h4>
+<p><img src="https://s3.amazonaws.com/edu-screenshots/legacy/119320170422102629.png" alt="screenshot"
+title="Screenshot"></p>
+<hr>
+<h3>Task 2. Generate Traffic to Capture EAD Probes</h3>
+<h4>Objective</h4>
+<p>In this task, you will initiate new TCP connections from your Windows desktop to the HTTP web server.</p>
+<blockquote>
+<p><strong>It is important to follow the instructions carefully since this is a time sensitive task.</strong> By
+establishing an HTTP connection, you will initiate the Enhanced Auto-Discovery (EAD) process, which will
+insert probes into the TCP options field that will be captured by the TCP Dump process staged in the
+previous task.</p>
+</blockquote>
+<h4>Detailed Steps</h4>
+<blockquote>
+<p>Ensure the TCP Dump Configuration task has been completed before proceeding with this task. You will also
+need to be pretty quick (within 60 seconds between steps 1 and 3)</p>
+</blockquote>
+<ol>
+<li>
+<p>In the SteelHead Web UI TCP Dump capture, click the <strong>Add</strong> button. <em>EADprobes</em>
+should appear under <strong>TCP Dumps Currently Running</strong></p>
+</li>
+<li>
+<p>Open a <strong>new tab</strong> in your browser.</p>
+</li>
+<li>
+<p>Using the browser bookmarks toolbar, open <code>Datacenter Hosts &gt; n31-fil File Server (HTTP)</code>
+in the new tab.</p>
+<blockquote>
+<p><code>http://10.1.31.130</code></p>
+<p>The page will load with a web directory listing of the /public/ directory of your datacenter file
+server.</p>
+</blockquote>
+</li>
+<li>
+<p>Return to the SteelHead Web UI browser window.</p>
+</li>
+<li>
+<p>Click the <strong>Stop Selected Captures</strong> button <em><em>or</em></em> simply wait for 60 seconds
+for the TCP dump to complete.</p>
+</li>
+<li>
+<p>Leave your browser window open.</p>
+</li>
+</ol>
+<h4>Review</h4>
+<p>By performing a directory listing of the HTTP /public/ directory, you generated a TCP 3-way handshake that
+subsequently initiated the EAD process. The probes generated in the EAD process were captured by TCP dump
+process you created and will be analyzed in the next tasks using Wireshark.</p>
+<p><img src="https://s3.amazonaws.com/edu-screenshots/legacy/119320170422103731.png" alt="screenshot"
+title="Screenshot"></p>
+<hr>
+<h3>Task 3. Download TCP Dump Capture Files from the SteelHead</h3>
+<h4>Objective</h4>
+<p>In this task, you will download the recently created TCP Dump capture files from the SteelHead Web UI.</p>
+<blockquote>
+<p>The TCP Dump configured earlier created capture files for both the LAN and WAN interfaces. Each of these
+capture files are saved as a <code>.cap0</code> file which will be analyzed using the free Wireshark packet
+analysis tool.</p>
+</blockquote>
+<h4>Detailed Steps</h4>
+<ol>
+<li>
+<p>Use the SteelHead Web UI browser tab that you left open in the previous task.</p>
+</li>
+<li>
+<p><strong>Refresh</strong> your browser window.</p>
+</li>
+<li>
+<p>In the table of stored TCP dumps, you will see two new capture files for the LAN and WAN interfaces.</p>
+<p><img src="https://s3.amazonaws.com/edu-screenshots/legacy/119220170423212642.png" alt="screenshot"
+title="Screenshot"></p>
+<blockquote>
+<p>You will notice that the file name is formatted using the following syntax:</p>
+<p><code>&lt;hostname&gt;_&lt;interface&gt;_&lt;your-dump-name&gt;.cap0</code></p>
+</blockquote>
+</li>
+<li>
+<p>Expand each capture file and click it's <strong>Download</strong> link.</p>
+<p><img src="https://s3.amazonaws.com/edu-screenshots/legacy/119320170422110112.png" alt="screenshot"
+title="Screenshot"></p>
+</li>
+<li>
+<p>In the pop-up, click the <strong>Save</strong> button (will vary slightly between Firefox and Chrome):
+</p>
+<p><img src="https://s3.amazonaws.com/edu-screenshots/legacy/119320170422110122.png" alt="screenshot"
+title="Screenshot"></p>
+</li>
+<li>
+<p>Ensure both files are downloaded and note their location, usually the Downloads folder or the Desktop.
+</p>
+</li>
+</ol>
+<h4>Review</h4>
+<p><img src="https://s3.amazonaws.com/edu-screenshots/legacy/119320170422110250.png" alt="screenshot"
+title="Screenshot"></p>
+<hr>
+<h3>Task 4. Use Wireshark to Analyze TCP Dump Capture File</h3>
+<h4>Objective</h4>
+<p>In this task, you will use Wireshark to analyze the TCP Dump capture files that you downloaded in the previous
+task.</p>
+<blockquote>
+<p>In the eLab environment, Wireshark has been installed on the Windows client, n21-pc. Although this task
+assumes that you already have some familiarity with the Wireshark product, the steps in this task will
+provide a step-by-step guide to allow you to analyze the packet capture.</p>
+</blockquote>
+<h4>Detailed Steps</h4>
+<ol>
+<li>
+<p>Using your Windows desktop client, click the Windows icon at leftmost of the Task Bar and start typing
+"wireshark". On the Search pop-up, select <strong>Wireshark 3.2.0</strong> (as in screenshot below,
+though version may differ slightly in your environment).</p>
+<p><img src="https://edu-screenshots.s3.amazonaws.com/current/40cb3471-2c62-480f-bc78-99ed9a57e4c8.png"
+alt="screenshot" title="Screenshot Accessing Wireshark 3.2.0"></p>
+</li>
+<li>
+<p>In the Wireshark title bar, select <strong>File &gt; Open</strong>.</p>
+</li>
+<li>
+<p>Navigate to the file location (Download directory is easily accessed via <em>Quick access</em> link),
+select the <code>lan0_0</code> capture file that you saved in the previous task, and click
+<strong>Open</strong>.
+</p>
+<p><img src="https://edu-screenshots.s3.amazonaws.com/current/94974d65-bcbb-46b0-8cb5-b628351ead7b.png"
+alt="screenshot" title="Screenshot Wireshark Open Capture"></p>
+</li>
+<li>
+<p>Launch a second Wireshark window, as before, and open the <code>wan0_0</code> capture file. You will have
+both capture files open, each in a separate Wireshark window.</p>
+</li>
+<li>
+<p>In the <code>lan0_0</code> trace window, type <code>http</code> in the <strong>Filter field</strong> and
+click <strong>Apply</strong>.</p>
+<blockquote>
+<p>This filter displays only packets containing HTTP traffic, which is just what we're looking for.</p>
+</blockquote>
+</li>
+<li>
+<p>Take a few moments to review the filtered results and explore additional Wireshark tools, such as the
+<strong>Statistics &gt; Flow Graph</strong>, <strong>Statistics &gt; TCP Stream Graphs</strong>, or
+<strong>Statistics &gt; HTTP</strong> menu options.
+</p>
+<p><img src="https://edu-screenshots.s3.amazonaws.com/current/26d6e529-ed88-4867-b3e3-106187e0d1d5.png"
+alt="screenshot" title="Screenshot Wireshark Flow Graph"></p>
+</li>
+<li>
+<p>Close the Flow Graph (if open) and, back in the main Wireshark window of the <code>lan0_0</code> capture,
+scroll through the packets in the Packet List pane (the top one) to find the first "GET / HTTP/1.1". In
+the Packet Details pane (the middle one), expand the TCP fields, then right-click on Source Port and
+select "Apply as Column". Identifying this connection's Source Port allows us to more easily follow this
+connection's packets when we open the WAN-side packet capture. In the screenshot below we see Source
+Port 49835.</p>
+<p><img src="https://edu-screenshots.s3.amazonaws.com/current/397516f9-452e-41ae-9e1c-98ce8cd316ce.png"
+alt="screenshot" title="Screenshot Wireshark Apply as Column"></p>
+</li>
+<li>
+<p>Clear the Wireshark filter and locate the SYN packet whose Source Port corresponds to the HTTP Get. </p>
+<blockquote>
+<p>In the screenshot below you will see packet 31 (top in list) shows SYN (and ECN &amp; CWR, which are
+not currently interested in) with Source Port 49835; this packet we will locate in the wan0_0
+capture to identify what, if anything, was changed by the n120-sh1 SteelHead (SH). </p>
+<p>While you are viewing this packet, it may be enlightening to note what the client set as TCP Options,
+to allow a more clear picture of any changes made by the client-side SteelHead. You may also note
+packet numbers 36 and 37 in the screenshot as the SYN/ACK and ACK for this connection; these had to
+complete before the HTTP GET we first looked at, in packet 43, could be sent by the client's
+browser.</p>
+</blockquote>
+<p><img src="https://edu-screenshots.s3.amazonaws.com/current/a5e77ade-036a-439f-babe-7820d34ffb01.png"
+alt="screenshot" title="Screenshot Wireshark"></p>
+</li>
+<li>
+<p>Switch to the Wireshark <code>wan0_0</code> trace window, type <code>tcp.options.rvbd.probe</code> in the
+<strong>Filter field</strong> and click the <strong>Apply</strong> arrow at far right of the filter
+field.
+</p>
+</li>
+<li>
+<p>Look for the "S+" in the Info field of the packet who's Source Port matches that noted in the lan0_0
+capture (if it helps, you can add Source Port as a column, as before).</p>
+<blockquote>
+<p>You are isolating the same SYN packet the client sent to initiate this connection, but we now see it
+<em>after</em> being handled by the client-side SH. Peruse the TCP Options of this packet to note if
+any client-set options were altered.
+</p>
+</blockquote>
+</li>
+<li>
+<p>To explore the Enhanced Auto Discovery process further, <strong>click on each of the filtered
+packets</strong> and expand the <strong>Transmission Control Protocol &gt; Options</strong> entry in
+the Packet Details pane.</p>
+</li>
+<li>
+<p><strong>Search the TCP Options field</strong> of the S+, SA++, and SA+ packets to ensure you understand
+how the client- and server-side SteelHeads leverage the TCP Options field to auto-discover each other.
+Note that selecting a TCP Option in the Packet Details pane highlights the corresponding
+hexadecimal-formatted payload in the Packet Bytes pane (bottom panel); useful to verify the first byte
+of Riverbed EAD probes use 0x4c. </p>
+</li>
+<li>
+<p>With auto-discovery understood, select the first SA+ packet, note it's packet number (on the left-most
+column) and clear the Wireshark display filter by selecting the <code>x</code> at the filter's
+right-hand edge. You should find the subsequent packets show the client-side SteelHead ARP for it's
+default gateway, then send the SYN packet to the server-side SteelHead's in-path IP address over
+tcp/7800. This begins the correct-addressed inner channel to establish optimization between the
+SteelHead appliances.</p>
+<p><img src="https://edu-screenshots.s3.amazonaws.com/current/279291f0-bbb2-4876-beff-6805be8e0ee0.png"
+alt="screenshot" title="Screenshot Wireshark 4c filter"></p>
+</li>
+<li>
+<p>Once complete, exit out of both Wireshark application windows.</p>
+</li>
+</ol>
+<hr>
+<h3>Task 5. Change the Transparency Mode to <em>Full Transparency</em></h3>
+<h4>Objective</h4>
+<p>We will now set WAN Visibility Mode for tcp/80 connections to the n31-fil server to Full IP and Port
+Transparency, then capture packets to analyze TCP Options. Recall that transparency mode, like every in-path
+rule feature, is always configured on the client-side SteelHead.</p>
+<h4>Detailed Steps</h4>
+<ol>
+<li>
+<p>Return to the Web GUI for n120-sh1. Navigate to <strong>OPTIMIZATION &gt; NETWORK SERVICES &gt; In-Path
+Rules</strong></p>
+</li>
+<li>
+<p>Click <strong>Add a New In-Path Rule</strong>, and configure these settings</p>
+<pre><code>Source Subnet = All IPv4
+Destination Subnet = 10.1.31.130/32
+Destination: &gt; Port: &gt; Specific Port: 80
+WAN Visibility Mode = Full Transparency
+Description = "full trpy to n31-fil:80"</code></pre>
+<p><img src="https://edu-screenshots.s3.amazonaws.com/current/b39ba38b-ae37-422c-808c-fbe7ee5f76d3.png"
+alt="screenshot" title="Screenshot full trpy rule to n31-fil:80"></p>
+</li>
+<li>
+<p>Leave all other settings at their default values and click <strong>Add</strong></p>
+</li>
+</ol>
+<h4>Review</h4>
+<p><img src="https://edu-screenshots.s3.amazonaws.com/current/b7bd4944-dbd1-44b6-a683-b3af9bd64363.png"
+alt="screenshot" title="Screenshot Inpath Rule list"></p>
+<hr>
+<h3>Task 6. Configure and Start a New TCP Dump</h3>
+<h4>Objective</h4>
+<p>In this task we will create a new TCPDump and generate more traffic which, this time, should be optimized using
+Full Transparency. We then examine these trace files using Wireshark.</p>
+<h4>Detailed Steps</h4>
+<ol>
+<li>
+<p>Staying on the GUI for n120-sh1 navigate to <strong>Reports &gt; Diagnostics &gt; TCP Dumps</strong>.</p>
+</li>
+<li>
+<p>As before, click the <strong>Add a New TCP Dump</strong> button and specify the following capture
+criteria. Again, leave any unlisted fields at the default value. </p>
+<blockquote>
+<p>Though we will add a bit more time, check that the browser tab for <strong>Datacenter Hosts &gt;
+n31-fil File Server (HTTP)</strong> is still open; if it is not then open it, take a quick
+glance at where the file "DutchGoldenAge.ppt" is, and return here to complete the capture.</p>
+</blockquote>
+<pre><code>Capture Name:           FTprobes
+In-Path Interfaces:     lan0_0 (Check)
+wan0_0 (Check)
+Capture Duration:       120 Seconds</code></pre>
+<p><img src="https://s3.amazonaws.com/edu-screenshots/legacy/119220180420101556.png" alt="screenshot"
+title="Screenshot"></p>
+</li>
+<li>
+<p>Click <strong>Add</strong> to start the TCP Capture. Verify that <strong>FTprobes</strong> appears under
+<strong>TCP Dumps Currently Running</strong>:
+</p>
+<p><img src="https://s3.amazonaws.com/edu-screenshots/legacy/119220180420102120.png" alt="screenshot"
+title="Screenshot"></p>
+</li>
+<li>
+<p>Return to the tab for <strong>Datacenter Hosts &gt; n31-fil File Server (HTTP)</strong> and refresh it.
+Click the <strong>Presentations</strong> folder and then right-click the "DutchGoldenAge.ppt" file and,
+when prompted, save the file. It technically does not matter which file you choose or even where you
+have stored it, the important thing is that we have generated some traffic:</p>
+<p><img src="https://s3.amazonaws.com/edu-screenshots/legacy/119220180420102339.png" alt="screenshot"
+title="Screenshot"></p>
+</li>
+<li>
+<p><em>If you act quickly</em> you should be able to view this connection on n120-sh1 in the <em>Reports
+&gt; Networking &gt; Current Connections Report</em>. HTTP connections are typically short lived, so
+you'd have to view it before the transfer finishes. If you can, open this report and expand the
+optimized connection. You should see that the connection is using Full Transparency. Should you miss
+this first transfer, feel free to perform another with a file you've not yet transferred; this should
+allow you time to catch it in the Current Connections Report.</p>
+</li>
+</ol>
+<h4>Review</h4>
+<p><img src="https://s3.amazonaws.com/edu-screenshots/legacy/119220180420102755.png" alt="screenshot"
+title="Screenshot"></p>
+<hr>
+<h3>Task 7. Use Wireshark to Analyze the New TCP Dump Capture File</h3>
+<h4>Objective</h4>
+<p>In this, the final task of this lab, we will once again use Wireshark to analyze the TCP Dumps we generated in
+the previous task.</p>
+<h4>Detailed Steps</h4>
+<ol>
+<li>
+<p>Download both capture files using the steps you performed in Task 3.</p>
+</li>
+<li>
+<p>Open a new Wireshark window and select <strong>File &gt; Open</strong>.</p>
+</li>
+<li>
+<p>Select the <code>lan0-0</code> capture file that you just saved. Ensure you open <em>FTprobes</em> rather
+than the EADprobes file!</p>
+<p><img src="https://s3.amazonaws.com/edu-screenshots/legacy/119220180420103400.png" alt="screenshot"
+title="Screenshot"></p>
+</li>
+<li>
+<p>Repeat this step for the corresponding <code>wan0_0</code> capture file in a separate Wireshark window.
+</p>
+</li>
+<li>
+<p>In the <code>lan0_0</code> trace window, type <code>http</code> in the <strong>Filter field</strong>,
+click the <strong>Apply</strong> arrow.</p>
+</li>
+<li>
+<p>Take a few moments to review the filtered results, they should look remarkably similar to those you saw
+in Task 4.</p>
+</li>
+<li>
+<p>Now, in the <code>wan0_0</code> trace window, type <code>tcp.options.rvbd.trpy</code> in the
+<strong>Filter field</strong> and click the <strong>Apply</strong> arrow.
+</p>
+<blockquote>
+<p>This filter will display only the packets containing the Riverbed Transparency TCP option, which as
+you recall (and which you can now validate) begins with hexadecimal entry <code>4e</code>. Remember,
+Full Transparency embeds the inner channel addressing information in the TCP options field, and it
+is this information we are now interested in.</p>
+</blockquote>
+</li>
+<li>
+<p>You should see a lot of green packets between the IP addresses 10.1.21.110 and 10.1.31.130, all of them
+with <code>TRPY</code> in the Info field. Click on one of these packets and expand the
+<strong>Transmission Control Protocol &gt; Options</strong> entry in the lower contents pane.
+</p>
+</li>
+<li>
+<p><strong>Search the TCP Options field</strong> and its corresponding hexadecimal-formatted payload in the
+lower two panels.</p>
+</li>
+<li>
+<p>You should be able to see the 'real' endpoint IP addresses (of the client- and server-side SteelHead
+in-path interfaces) embedded within the TCP Options field:</p>
+<p><img src="https://s3.amazonaws.com/edu-screenshots/legacy/119220180420104418.png" alt="screenshot"
+title="Screenshot"></p>
+</li>
+<li>
+<p>Take a few moments to review the filtered results. Can you understand what is going on here? if not,
+discuss this with your instructor.</p>
+</li>
+</ol>
+<hr>
+<h3>Extra Credit</h3>
+<ol>
+<li>
+<p>Finally (you may need to change the filters) compare an equivalent packet (from a source IP to
+destination IP) from the lan0_0 file with one from the wan0_0 capture file paying particular attention
+to the client IP addresses its associated MAC address. See if you can answer the following questions:
+</p>
+<p>Does the SYN+ packet seen on the WAN side of n120-sh1 have the same source MAC address as it's
+corresponding SYN packet seen on the LAN side? (HINT: use TCP source port to ensure same packet for same
+connection is being compared)</p>
+<p>For a given connection in full transparency, do the data packets (packets after the TCP handshake) on the
+WAN side of the client-side SteelHead have the same source MAC address as data packets on the LAN side?
+(HINT: look for TCP option 0x4e on the WAN-side trace)</p>
+<p>Consider the MAC address corresponding to the IP address of the server (10.1.31.130), from the client's
+perspective. Will the client see a change in the MAC address for the "server" depending on SYN, SYN+ and
+data packets?</p>
+</li>
+<li>
+<p>An important concept to understand about the above questions is: how is the SteelHead terminating and
+bridging traffic? How are SYN+ packets actually handled? Which MAC address does the client-side
+SteelHead use when it sends SYN+ packets? For the inner-channel of a full transparent connection, who is
+really talking to whom?</p>
+</li>
+<li>
+<p>Once complete, exit out of both Wireshark application windows.</p>
+</li>
+</ol>
+<hr>
+<h3>End of Scenario</h3>
+<p>Congratulations! You have successfully created TCP dumps on SteelHead appliances, and from those have identified
+and traced EAD packets and Full Transparency connections. For more information on Wireshark or to learn more
+about packet capture, it is recommended to visit www.wireshark.org to download a free copy for yourself.</p>
+</div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-05-25T07:13:34+10:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-05-25</span>
+      
+    
+  </small>
+</div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../lab-2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: HOL5923: Create Web App Dashboards" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              HOL5923: Create Web App Dashboards
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../lab-4/" class="md-footer__link md-footer__link--next" aria-label="Next: Lab 4" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Lab 4
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://hub.docker.com/u/jodis" target="_blank" rel="noopener" title="DockerHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://github.com/jodisfields" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/jodisfields" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    <a href="mailto:contact@fieldbox.me" target="_blank" rel="noopener" title="Email" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="m511.6 36.86-64 415.1a32.008 32.008 0 0 1-31.65 27.147c-4.188 0-8.319-.815-12.29-2.472l-122.6-51.1-50.86 76.29C226.3 508.5 219.8 512 212.8 512c-11.5 0-20.8-9.3-20.8-20.8v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96 122.3 360.3 19.69 317.5C8.438 312.8.812 302.2.062 289.1s5.47-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.instant", "navigation.tracking", "navigation.top"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
+      
+        <script src="../js/timeago.min.js"></script>
+      
+        <script src="../js/timeago_mkdocs_material.js"></script>
+      
+    
+  </body>
+</html>

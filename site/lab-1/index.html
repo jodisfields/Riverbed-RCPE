@@ -1,0 +1,1244 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Riverbed RCPE Professional Implement WAN Optimization Course Notes and Discussion">
+      
+      
+        <meta name="author" content="Jodis Fields">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+    
+    
+      
+        <title>Lab 1 - RCPE Professional</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/timeago.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-36SY15Z911"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-36SY15Z911",{page_path:e.pathname})})})</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-36SY15Z911"></script>
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="RCPE Professional" class="md-header__button md-logo" aria-label="RCPE Professional" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14.27 10.64 13A11.242 11.242 0 0 0 5 10.18v6.95c2.61.34 5 1.34 7 2.82 2-1.48 4.39-2.48 7-2.82v-6.95c-2.16.39-4.09 1.39-5.64 2.82M19 8.15c.65-.1 1.32-.15 2-.15v11c-3.5 0-6.64 1.35-9 3.54C9.64 20.35 6.5 19 3 19V8c.68 0 1.35.05 2 .15 2.69.41 5.1 1.63 7 3.39 1.9-1.76 4.31-2.98 7-3.39M12 6c.27 0 .5-.1.71-.29.19-.21.29-.44.29-.71s-.1-.5-.29-.71C12.5 4.11 12.27 4 12 4s-.5.11-.71.29c-.18.21-.29.45-.29.71s.11.5.29.71c.21.19.45.29.71.29m2.12 1.12a2.997 2.997 0 1 1-4.24-4.24 2.997 2.997 0 1 1 4.24 4.24Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RCPE Professional
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lab 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jodisfields/Riverbed-RCPE" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jodisfields/Riverbed-RCPE
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="RCPE Professional" class="md-nav__button md-logo" aria-label="RCPE Professional" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 14.27 10.64 13A11.242 11.242 0 0 0 5 10.18v6.95c2.61.34 5 1.34 7 2.82 2-1.48 4.39-2.48 7-2.82v-6.95c-2.16.39-4.09 1.39-5.64 2.82M19 8.15c.65-.1 1.32-.15 2-.15v11c-3.5 0-6.64 1.35-9 3.54C9.64 20.35 6.5 19 3 19V8c.68 0 1.35.05 2 .15 2.69.41 5.1 1.63 7 3.39 1.9-1.76 4.31-2.98 7-3.39M12 6c.27 0 .5-.1.71-.29.19-.21.29-.44.29-.71s-.1-.5-.29-.71C12.5 4.11 12.27 4 12 4s-.5.11-.71.29c-.18.21-.29.45-.29.71s.11.5.29.71c.21.19.45.29.71.29m2.12 1.12a2.997 2.997 0 1 1-4.24-4.24 2.997 2.997 0 1 1 4.24 4.24Z"/></svg>
+
+    </a>
+    RCPE Professional
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jodisfields/Riverbed-RCPE" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jodisfields/Riverbed-RCPE
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Kerberos/" class="md-nav__link">
+        How does Kerberos work?
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../authentication/" class="md-nav__link">
+        Authentication
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../best-practice/" class="md-nav__link">
+        SteelHead Best Practices
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bonus/" class="md-nav__link">
+        Bonus Material Transcript
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bypass-nic/" class="md-nav__link">
+        SteelHead-V and Riverbed Bypass NIC
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cheetsheet/" class="md-nav__link">
+        Cheetsheet
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployment-methods/" class="md-nav__link">
+        Deployment Methods
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ead/" class="md-nav__link">
+        Enhanced Auto Discovery (EAD)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../housekeeping/" class="md-nav__link">
+        Housekeeping
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Lab 1
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab-2/" class="md-nav__link">
+        HOL5923: Create Web App Dashboards
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab-3/" class="md-nav__link">
+        Lab 3
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab-4/" class="md-nav__link">
+        Lab 4
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../license-tiers/" class="md-nav__link">
+        License Tiers
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mgmt-and-config/" class="md-nav__link">
+        Management and Configuration
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-notes/" class="md-nav__link">
+        Quick notes
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ssl-tls-traffic/" class="md-nav__link">
+        Accelerate SSL/TLS Traffic
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transparency/" class="md-nav__link">
+        Transparency Options Field
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/jodisfields/Riverbed-RCPE/edit/master/docs/lab-1.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<div class="prose lg:prose-lg max-w-none">
+    <h1>HOL1131: Optimization with Windows file share (SMB) Demo</h1>
+    <h3>Introduction</h3>
+    <p>This exercise introduces the user interface and effectiveness of WAN optimization using Riverbed Optimization
+        System, RiOS.</p>
+    <h3>Overview</h3>
+    <p>In this exercise you will monitor and record transfer times of traffic you generate to witness optimization
+        efficacy. This eLab is designed for you to gain working knowledge of some basic SteelHead concepts and
+        optimization effects, and presumes little to no familiarity with the SteelHead UI.</p>
+    <p>The network environment has two sites:</p>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Host</th>
+                <th>SteelHead</th>
+                <th>City</th>
+                <th>Site</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Branch Office</td>
+                <td>n21-win10</td>
+                <td>n120-sh1</td>
+                <td>San Francisco, California</td>
+                <td>Site A</td>
+            </tr>
+            <tr>
+                <td>Datacenter</td>
+                <td>n31-svr</td>
+                <td>n130-sh1</td>
+                <td>Ashburn, Virginia</td>
+                <td>Site B</td>
+            </tr>
+        </tbody>
+    </table>
+    <ul>
+        <li>These sites are connected by a WAN with approximately <strong>70ms latency, 1.5Mbit/sec, and 0.5%
+                loss</strong>.</li>
+    </ul>
+    <p>The SteelHead virtual appliances in this scenario are pre-configured, to allow your focus to be on the effects of
+        optimization and benefits to user experience.</p>
+    <h4>More information on topics covered in this exercise can be found here:</h4>
+    <ul>
+        <li>SteelHead CX Installation and Configuration Guide
+            <ul>
+                <li>Chapter 3, Installing and Configuring the SteelHead</li>
+                <li>Chapter 4, Troubleshooting</li>
+            </ul>
+        </li>
+        <li>SteelHead Deployment Guide
+            <ul>
+                <li>Chapter 3, WAN Visibility Modes</li>
+                <li>Chapter 9, Physical In-Path Deployments</li>
+            </ul>
+        </li>
+        <li>SteelHead Deployment Guide - Protocols
+            <ul>
+                <li>Chapter 1, CIFS Optimization</li>
+                <li>Chapter 3, Signed SMB and Encrypted MAPI Optimization</li>
+            </ul>
+        </li>
+    </ul>
+    <h4>Lab Objectives</h4>
+    <ol>
+        <li>Map a Network Drive and Experience Non-optimized Environment</li>
+        <li>Allow optimization using in-path rules</li>
+        <li>Create optimized transfers and verify them</li>
+        <li>Create reports on the effects of optimization</li>
+    </ol>
+    <hr>
+    <h3>Task 1. Map a Network Drive and Experience Non-optimized Environment</h3>
+    <p>Map a network drive from your Windows Client PC to a Windows file share on the server in the datacenter, then
+        select a file and time how long it takes to copy across the WAN.</p>
+    <ul>
+        <li>
+            <p>Due to SMB/Kerberos requirements, we will spend most of this exercise leveraging Remote Desktop Protocol,
+                RDP, into a domain-joined Windows 10 PC, <code>n21-win10</code>.</p>
+        </li>
+        <li>
+            <p>Recall the SteelHeads have been pre-configured, and for this task the optimization capability - which
+                normally is automatically enabled - has been disabled. You will be re-enabling optimization in the next
+                task.</p>
+        </li>
+    </ul>
+    <ol>
+        <li>
+            <p>From the taskbar, launch RDP (the icon looking like a computer screen) to make a connection to
+                <code>n21-win10</code>, using credentials <code>LAB\elabstudent</code> and <code>myeLab!</code> This
+                places you as a user in the domain <strong>lab.local</strong>
+            </p>
+            <p><img src="https://riverbedlab.s3.us-west-2.amazonaws.com/screenshots/1680fe8e-7b25-4a8b-ac6b-33722197eaa1.png"
+                    alt="screenshot"
+                    title="RDP connection screen, either edit to add credentials, or continue and you will be promoted">
+            </p>
+            <p><img src="https://riverbedlab.s3.us-west-2.amazonaws.com/screenshots/9ef75863-a0cc-48c1-9a23-3d5045343a51.png"
+                    alt="screenshot" title="Domain logon"></p>
+        </li>
+        <li>
+            <p>On the <code>n21-win10</code> client PC, open the File Explorer, click on <code>This PC</code> and select
+                the Computer tab at the top of the window. From the <em>Map Network Drive</em> pop-up window, map the
+                Network drive <code>\\share.lab.local\public</code></p>
+            <p><img src="https://riverbedlab.s3.us-west-2.amazonaws.com/screenshots/48eac836-da0c-4aaa-8ca9-b44d2f17842f.png"
+                    alt="screenshot" title="Map a network drive to n31-svr\public"></p>
+            <p><img src="https://riverbedlab.s3.us-west-2.amazonaws.com/screenshots/cf6a2355-0dfd-4c8f-9b9a-6343b2047b9a.png"
+                    alt="screenshot" title="Map Network Drive"></p>
+        </li>
+        <li>
+            <p>As the directory names suggest, there are many file types available, but for now navigate to the
+                <strong>Presentations</strong> folder and select a file larger than roughly 10MB.
+            </p>
+        </li>
+    </ol>
+    <ul>
+        <li>
+            <p>We will use the file <strong>BoogieWoogieBugleBoy.ppt</strong> for our example.</p>
+        </li>
+        <li>
+            <p>It does not matter which file you select, but make a note of yours so you can repeat the same transfer
+                later in a like-for-like comparison <em>with</em> optimization.</p>
+        </li>
+    </ul>
+    <ol start="4">
+        <li>With a stopwatch ready (your watch or phone or the Clock widget at lower-right of the n21-win10 desktop
+            would work) copy the file and make note of how long the transfer takes.</li>
+    </ol>
+    <ul>
+        <li>Once the copy is completed and you've noted the transfer time, let's see how the SteelHead reports on this
+            connection.</li>
+    </ul>
+    <ol start="5">
+        <li>
+            <p>Start Firefox and use the provided shortcut, <strong>Site A - Branch &gt; Optimization &gt; n120-sh1
+                    SteelHead (Path 1)</strong>, to access <code>n120-sh1</code>; logon with credentials <em>admin</em>
+                :: <em>password</em>.</p>
+        </li>
+        <li>
+            <p>On the <code>n120-sh1</code> UI, navigate to <strong>Reports &gt; Networking: Current
+                    Connections</strong></p>
+            <p><img src="https://riverbedlab.s3.us-west-2.amazonaws.com/screenshots/334ac469-d7cf-4e17-855f-e38cf1c090c0.png"
+                    alt="screenshot" title="Screenshot - SH Current Connections - Passthrough of 10.1.31.120:445"></p>
+            <ul>
+                <li>
+                    <p>You should see a connection with:</p>
+                    <ul>
+                        <li>
+                            <p>"Destination:Port" = 10.1.31.120:445</p>
+                        </li>
+                        <li>
+                            <p>"Connection Type" = grey arrow (which the legend shows us is an "Intentional"
+                                pass-through)</p>
+                        </li>
+                        <li>
+                            <p>"Passthrough reason" = In-path rule</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>To see details of the connection you press the gray "Show details" triangle on the left.</p>
+                </li>
+                <li>
+                    <p>The "Passthrough reason: In-path rule" tells us this client-side SteelHead is passing the
+                        connection through <em>because</em> it has been administratively informed to do so. That's the
+                        purpose of an in-path rule: Us telling the SteelHead whether it should attempt to optimize (or
+                        not, as in this case), and if so, how to do so.</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>Still on <code>n120-sh1</code>, head to <strong>Reports &gt; Networking: WAN Throughput</strong></p>
+            <p><img src="https://riverbedlab.s3.us-west-2.amazonaws.com/screenshots/0162e6d4-cb20-4457-b6c5-f8b67ece5052.png"
+                    alt="screenshot" title="Screenshot - SteelHead WAN Throughput"></p>
+            <ul>
+                <li>
+                    <p>Click on the <strong>5m</strong> Time Selector (or "1h" if it's been longer than 5 minutes since
+                        you copied the file over) to 'zoom in' to the best resolution view of your transfer</p>
+                </li>
+                <li>
+                    <p>Note the x-axis of the graph provides an indication of how long your transfer took. This works
+                        splendid in our Lab, with only our one connection to view, but on a SteelHead carrying
+                        production traffic with hundreds or thousands of optimized connections, isolating a single
+                        transfer on this report is not possible.</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>Now that you've experienced an unoptimized transfer, and been informed why it is not being optimized,
+                return to the <strong>File Manager</strong> app, right click on the <code>\\n31-svr\public</code> shared
+                drive and disconnect it.</p>
+            <p><img src="https://riverbedlab.s3.us-west-2.amazonaws.com/screenshots/4310e0fd-de6e-4f81-90b1-2cdcddc61368.png"
+                    alt="screenshot" title="Screenshot - n21-win10, Drive disconnection"></p>
+        </li>
+    </ol>
+    <ul>
+        <li>
+            <p><strong>Worthy of Note:</strong> We disconnect the drive now because SteelHeads do not <em>start</em>
+                optimizing existing/pre-existing connections. A SteelHead will not attempt to initiate optimization of
+                connections it has not seen the SYN message for; will simply pass them through.</p>
+        </li>
+        <li>
+            <p>After we re-enable optimization on the SteelHead, we will re-map the drive so the SteelHead can see the
+                very beginning of the connection and attempt to optimize it.</p>
+        </li>
+        <li>
+            <p>In other words, SteelHeads identify the SYN packet of each connection to evaluate if optimization should
+                occur, or if the SYN packet - and all subsequent packets for the connection - should be passed through
+                without optimization.</p>
+        </li>
+    </ul>
+    <blockquote>
+        <p>Having a baseline of 'performance without optimization', we can compare this to the transfer time of
+            subsequent optimized transfers.</p>
+    </blockquote>
+    <hr>
+    <h3>Task 2. Allow optimization using in-path rules</h3>
+    <p>You will first 're-enable' optimization on the branch SteelHead, <code>n120-sh1</code> by adjusting the in-path
+        rules.</p>
+    <ol>
+        <li>
+            <p>On <code>n120-sh1</code>, navigate to <strong>&gt; Optimization &gt; Network Services: In-Path
+                    Rules</strong>.</p>
+            <ul>
+                <li>SCAN the in-path rules to see at a high level what they do:</li>
+            </ul>
+            <p><img src="https://riverbedlab.s3.us-west-2.amazonaws.com/screenshots/52e45df9-18dd-424d-bdab-770488dd6da8.png"
+                    alt="screenshot"
+                    title="Screenshot - SteelHead In-path Rules, noting Type, Source &amp; Destination, and Rule #"></p>
+            <p>Identified Columns:</p>
+            <ol>
+                <li>
+                    <p>Type = "Pass Through" or "Auto Discover"</p>
+                </li>
+                <li>
+                    <p>Source &amp; Destination = IP Addresses on the SYN Packet being evaluated for optimization.</p>
+                </li>
+                <li>
+                    <p>Rule # = Hierarchic order; rules evaluated top to bottom like access control list (ACL).</p>
+                    <ul>
+                        <li>
+                            <p>One Rule to note is "default", whose purpose is to attempt to optimize, via
+                                auto-discovery, any new TCP connection not passed through by above rules.</p>
+                        </li>
+                        <li>
+                            <p>This "default" rule cannot be deleted, effectively causing SteelHeads to behave in a
+                                "blacklist" manner, where every TCP connection has optimization attempted
+                                <em>except</em> those explicitly passed through, or blacklisted, via previously
+                                evaluated in-path rules.
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <p>To re-configure this SteelHead to attempt optimization, you are welcome to either:</p>
+            <ul>
+                <li>
+                    <p><strong>Disable the rule</strong> by clicking on the twisty next to the rule number, scroll down
+                        and uncheck <code>Enable Rule</code>, and click <strong>Apply</strong>, or</p>
+                </li>
+                <li>
+                    <p><strong>Delete this first rule</strong> by ticking it's checkbox on the far left and clicking
+                        <strong>Remove Selected Rules</strong>
+                    </p>
+                </li>
+            </ul>
+            <blockquote>
+                <p>Your SteelHead will now attempt to optimize all LAN-to-WAN TCP traffic not matching the remaining,
+                    default pass-through rules.</p>
+            </blockquote>
+        </li>
+    </ol>
+    <hr>
+    <h3>Task 3. Create optimized connections and verify them.</h3>
+    <p>You will now re-map the network drive as you did in Task 1. This time however, the SteelHeads will create an
+        optimized session using, as you may have noticed in the bottom-most <code>default</code> in-path Rule, Auto
+        Discovery. You will then verify optimization status.</p>
+    <ol>
+        <li>
+            <p>Re-map the network drive <code>\\share.lab.local\public</code> on <code>n21-win10</code></p>
+            <ul>
+                <li>In the <strong>File Explorer</strong> window, select <code>This PC</code> and the <em>Computer</em>
+                    tab at the top, and either re-type the URL or use the drop-down, which should have the address
+                    cached.</li>
+            </ul>
+        </li>
+        <li>
+            <p>Now, on <code>n120-sh1</code> GUI, return to <strong>Reports &gt; Networking: Current
+                    Connections</strong> to see the connection in an optimized state. Should your connection not be
+                optimized... this is a perfect opportunity to review the above and your course material to determine
+                why!</p>
+            <ul>
+                <li>
+                    <p>In a live environment you may well see tens of thousands of connections or more, so take a moment
+                        to review your options for filtering on this page.</p>
+                </li>
+                <li>
+                    <p>Note also, on your optimized connection you should see the version of SMB currently in use, and
+                        the <em>Username</em>, which is populated from the Active Directory integration.</p>
+                </li>
+            </ul>
+            <blockquote>
+                <p><strong>Knowledge check:</strong></p>
+            </blockquote>
+            <ul>
+                <li>
+                    <p>In the view below, what informs the connection is optimized?</p>
+                </li>
+                <li>
+                    <p>In the view below, what informs the connection is encrypted over the WAN?</p>
+                    <ul>
+                        <li>Hint: hovering icons in your Current Connections screen can answer both questions...</li>
+                    </ul>
+                    <p><img src="https://riverbedlab.s3.us-west-2.amazonaws.com/screenshots/e2d0e34c-6b1d-4f81-8289-a60e864da07f.png"
+                            alt="screenshot" title="Current Connections Report"></p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>Knowing your connection is optimized, and with your stopwatch at the ready, use <strong>File
+                    Manager</strong> to repeat the transfer of the same file you used before, and time how long it
+                takes.</p>
+            <ul>
+                <li>
+                    <p>Since the byte patterns of this file is being seen/optimized for the first time by these two
+                        SteelHeads, this is a “cold” transfer.</p>
+                </li>
+                <li>
+                    <p>Whether the end user notices a significant speed improvement or not, the data segments are being
+                        segmented/'learned' by both SteelHeads and stored to allow future “warm” transfers when the same
+                        patterns are passed between these two SteelHeads again.</p>
+                </li>
+            </ul>
+            <blockquote>
+                <p>During the file transfer, on the File Manager transfer pop-up you can expand the caret in the bottom
+                    left corner to view more details.</p>
+            </blockquote>
+            <p><img src="https://riverbedlab.s3.us-west-2.amazonaws.com/screenshots/c56cd34e-ca02-4daf-9f55-fc1309b16c99.png"
+                    alt="screenshot" title="Screenshot - n21-win10 File Manager view of Cold Transfer"></p>
+            <blockquote>
+                <p>With transfer finished, compare this "cold" transfer time with the "unoptimized" transfer time.</p>
+            </blockquote>
+            <ul>
+                <li>
+                    <p>Keep in mind that bandwidth reduction benefits are more tangible to Users over slower or
+                        oversubscribed WAN links. It is <em>latency reduction</em> which Users feel the most, which
+                        SteelHeads usually impact most with their Application-layer optimization. However, less
+                        bandwidth used is also a perspective; for instance:</p>
+                    <ul>
+                        <li>
+                            <p>Tell a User they consumed 60% less bandwidth and they'll say "So what."</p>
+                        </li>
+                        <li>
+                            <p>Tell a Network Admin or CFO their data circuits are 60% less utilized, and they'll say
+                                "Amazing!"</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>Let's move on to the "warm" transfer... start by deleting the local copy of your file on
+                <code>n21-win10</code>, then raise your stopwatch and repeat the transfer once more - but you will have
+                to be quick!
+            </p>
+        </li>
+    </ol>
+    <ul>
+        <li>Calculate the approximate speed for the SMB file transfers, cold and warm. How do they compare to the
+            previous non optimized transfer?</li>
+    </ul>
+    <blockquote>
+        <p>Take some time to experiment</p>
+    </blockquote>
+    <ul>
+        <li>
+            <p>Try changing a PowerPoint document and saving it as another file, then passing it back to the server.</p>
+        </li>
+        <li>
+            <p>Try doing the same with different file types. For instance,</p>
+            <ul>
+                <li>
+                    <p>Drag 'n drop the whole <strong>Databases</strong> folder (which contains ~3Mb of database files)
+                        to the <code>n21-win10</code> - <code>Downloads</code> folder.</p>
+                    <ul>
+                        <li>Pause a few moments, then go into the <code>\\share.lab.local\public\High-Res Images</code>
+                            folder and copy "wallpaper-1985738.png" (also roughly 3Mb, but one file),</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p>On <code>n130-sh1</code> navigate to <strong>Reports &gt; Optimization &gt; Optimized
+                            Throughput</strong> and compare the LAN and WAN impact of those two transfers.</p>
+                    <ul>
+                        <li>You should be able to discern the 3Mb of database traffic impacted the WAN &amp; LAN less,
+                            and perhaps even took a bit less time, than the 3Mb picture file.</li>
+                    </ul>
+                </li>
+            </ul>
+            <blockquote>
+                <p><strong>Knowledge Check:</strong></p>
+            </blockquote>
+            <ul>
+                <li>Why would the optimization effects differ on a "cold pass" of one type of data/traffic versus
+                    another?</li>
+            </ul>
+        </li>
+    </ul>
+    <ol start="5">
+        <li>
+            <p>We can now use the SCC in the data center to generate some HTTP traffic. Open a tab in Firefox and browse
+                to <code>http://10.1.31.50</code> and logon with <strong>admin</strong> and <strong>password</strong>.
+            </p>
+            <ul>
+                <li>
+                    <p>Click around the menus just to generate traffic.</p>
+                </li>
+                <li>
+                    <p>Then, open another tab and navigate to <code>https://10.1.31.50</code>. (accept the security risk
+                        in this Lab environment)</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>On <code>n120-sh1</code>, view the Current Connection details to compare the two connections to
+                <code>n31-scc</code>.
+            </p>
+            <p><img src="https://riverbedlab.s3.us-west-2.amazonaws.com/screenshots/8319d181-4fcc-48fe-b4c3-8903334c3369.png"
+                    alt="screenshot"
+                    title="Screenshot - SH Current Connections - Optimized &amp; Passthrough to n31-scc"></p>
+            <ul>
+                <li>
+                    <p>Both access techniques <em>can</em> be optimized, but in this case SSL optimization is not
+                        configured so, per default behavior, <code>tcp/443</code> traffic will be passed through; HTTP
+                        is optimized by default.</p>
+                </li>
+                <li>
+                    <p>For an advanced concept, navigate to the Current Connections page of <code>n130-sh1</code> and
+                        compare the pass-through reason for the tcp/443 connection. This may help highlight the
+                        perspective a server-side SteelHead has on connections, versus a client-side SteelHead.</p>
+                </li>
+            </ul>
+        </li>
+    </ol>
+    <hr>
+    <h3>Task 4. Create reports on the effects of optimization</h3>
+    <p>You will view reports showing WAN traffic reduction aspects of your previous transfers. You can also:</p>
+    <ul>
+        <li>
+            <p>Check on the SteelHead's peer table and look at the DataStore status,</p>
+        </li>
+        <li>
+            <p>View the LAN throughput, a most important statistic as this is where the user experience lies. LAN
+                throughput increase is due to a combination of WAN data reduction (usually to a lesser degree), and TCP
+                &amp; Application layer RTT optimizations (often the major contributor).</p>
+        </li>
+    </ul>
+    <ol>
+        <li>Let's check out the server-side SteelHead perspective.</li>
+    </ol>
+    <ul>
+        <li>
+            <p>Create a new browser tab if necessary to open the <code>n130-sh1</code> GUI, and navigate to
+                <strong>Reports &gt; Networking &gt; Traffic Summary</strong>
+            </p>
+            <p><img src="https://riverbedlab.s3.us-west-2.amazonaws.com/screenshots/565072d2-ef0a-49c1-9ba1-8bb9dd7a6276.png"
+                    alt="screenshot" title="Screenshot - SteelHead Traffic Summary report"></p>
+            <p>Notice the filtering defaults of <strong>Period: 1 Month</strong> and <strong>Traffic: Optimized
+                    traffic</strong>. Change them to <strong>5 minutes</strong> <em>(or "Last Hour" if necessary)</em>
+                and <strong>Both</strong>, respectively</p>
+        </li>
+        <li>
+            <p>What percentage of the total traffic was optimized?</p>
+        </li>
+        <li>
+            <p>What percentage of that traversed the WAN?</p>
+        </li>
+        <li>
+            <p>Also notice you can sort your metric of choice by clicking on the respective column header; helps quickly
+                identify outliers of interest. In many cases we are more interested in what is not going so well; for
+                instance when you see a port with substantial amounts of optimized traffic yet with no reduction, that
+                port is likely to be carrying encrypted traffic. Your choices in this specific case include:</p>
+            <p>a) Identify the traffic and either decrypt it somehow, or switch off encryption. (obviously requires
+                dialog with the application owner)</p>
+            <p>b) Pass it through, if decryption/non-encryption is not an option and TCP optimizations are not a
+                tangible timesaver (would require testing to validate).</p>
+            <p>It may be better to pass through that which cannot be optimized, to preserve resource for that which can.
+                And if we cannot make it slimmer and/or faster, we can easily pass it through. (a consideration for
+                substantial-throughput connections; usually a non-issue for smaller connections)</p>
+        </li>
+    </ul>
+    <ol start="2">
+        <li>
+            <p>Now view the <strong>Reports &gt; Optimization &gt; Optimized Throughput</strong> report. Notice in the
+                Controls panel on the right-hand side your Time Selection options, which include typing into the time
+                field, choosing one of the presets, or using the time control scroller bar at the bottom of the chart.
+                Notice also, below the Time selection area, that this report allows you to choose a single port of
+                interest or All, and you can view or omit the LAN, WAN, Peaks and Averages chart presentations by
+                unchecking them.</p>
+            <p><img src="https://riverbedlab.s3.us-west-2.amazonaws.com/screenshots/fac0a43f-9173-458e-b0fd-3626e919249c.png"
+                    alt="screenshot" title="Screenshot - SteelHead Optimized Throughput"></p>
+            <ul>
+                <li>
+                    <p>What was the peak LAN throughput in your timescale for HTTPS traffic?</p>
+                </li>
+                <li>
+                    <p>What was it for HTTP and SMB?</p>
+                </li>
+            </ul>
+            <p>It should be noted that for optimized traffic originating on port 445, SteelHead reporting refers
+                uniquely to the different SMB versions, options and dialects. For example, SteelHeads report on
+                SMB3-signed traffic as port 8782. The "real" port number on the connections (as Hosts on the outer
+                channels see it) remains 445. The Current Connections report shows which connection is using which SMB
+                type, and Filtering allows isolating to a particular protocol if desired.</p>
+            <p><img src="https://riverbedlab.s3.us-west-2.amazonaws.com/screenshots/78a68bf1-6b80-4e5f-a8ee-e010b5932b8f.png"
+                    alt="screenshot" title="Screenshot - SteelHead Current Connections"></p>
+        </li>
+        <li>
+            <p>Run a report on <strong>Reports &gt; Optimization &gt; Bandwidth Optimization</strong></p>
+            <p><img src="https://riverbedlab.s3.us-west-2.amazonaws.com/screenshots/19b46e72-1d55-4d32-93a9-1412576a0ed1.png"
+                    alt="screenshot" title="Screenshot - SteelHead Bandwidth Optimization"></p>
+            <p>Note the scale on the Y axis of the chart is automatically adjusted to suit. Hover the mouse over the
+                plot area to display the Data Reduction for various points on the timeline. Note that the LAN Throughput
+                should be greater than WAN Throughput to imply optimization occurring and reducing the amount of
+                throughput on the WAN.</p>
+            <blockquote>
+                <p>What was the peak LAN throughput?</p>
+                <p>When did it happen?</p>
+                <p>What protocol was it?</p>
+                <p>What was the total amount of data that was removed from the WAN during your time period?</p>
+            </blockquote>
+        </li>
+        <li>
+            <p>Run a report on <strong>Reports &gt; Optimization &gt; Data Store Status</strong></p>
+            <p><img src="https://riverbedlab.s3.us-west-2.amazonaws.com/screenshots/bebf5a46-839f-407a-8c21-1f949b563804.png"
+                    alt="screenshot" title="Screenshot - SteelHead Data Store Status"></p>
+            <blockquote>
+                <p>Note the percentage of the data store have you used.</p>
+                <p>What will happen when it becomes 100% full?</p>
+            </blockquote>
+        </li>
+    </ol>
+    <hr>
+    <h3>End of Scenario</h3>
+    <p>You have successfully created optimized traffic in an in-path deployment, and should understand the nature of
+        cold and warm file transfers. Ideally you noticed significant improvement in transfer times, even with file
+        modifications.</p>
+    <p><strong>Useful add-on:</strong> SDR is protocol agnostic, so the warm transfer of a byte stream in one
+        application will be equally optimized should that byte stream occur in a different applications. As an example,
+        downloading a file from the datacenter via a file share, then sending the file via email; your local and
+        datacenter SteelHeads will see the file 'cold' when downloading, then 'warm' when that same file is attached to
+        an email.</p>
+    <p>Finally, you verified various optimization statistics in different Reports. Good to note that bandwidth
+        reduction/optimization is enabled by default for all TCP ports not explicitly passed through. Once your
+        SteelHead appliance is plugged in and configured with the initial network settings, you can begin optimizing
+        traffic and notice significant performance increase, with accompanying WAN data reduction.</p>
+</div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2022-05-26T10:27:04+10:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2022-05-26</span>
+      
+    
+  </small>
+</div>
+
+              
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../housekeeping/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Housekeeping" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Housekeeping
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../lab-2/" class="md-footer__link md-footer__link--next" aria-label="Next: HOL5923: Create Web App Dashboards" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              HOL5923: Create Web App Dashboards
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://hub.docker.com/u/jodis" target="_blank" rel="noopener" title="DockerHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://github.com/jodisfields" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/jodisfields" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    <a href="mailto:contact@fieldbox.me" target="_blank" rel="noopener" title="Email" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="m511.6 36.86-64 415.1a32.008 32.008 0 0 1-31.65 27.147c-4.188 0-8.319-.815-12.29-2.472l-122.6-51.1-50.86 76.29C226.3 508.5 219.8 512 212.8 512c-11.5 0-20.8-9.3-20.8-20.8v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96 122.3 360.3 19.69 317.5C8.438 312.8.812 302.2.062 289.1s5.47-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.instant", "navigation.tracking", "navigation.top"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
+      
+        <script src="../js/timeago.min.js"></script>
+      
+        <script src="../js/timeago_mkdocs_material.js"></script>
+      
+    
+  </body>
+</html>
