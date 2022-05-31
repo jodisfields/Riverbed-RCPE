@@ -2,28 +2,23 @@ version: 2.1
 
 orbs:
   python: circleci/python@1.5.0
-
 # Define a job to be invoked
 jobs:
-  build-and-test:
+  build-and-deploy:
     docker:
       - image: cimg/python:3.9.5
-  
     steps:
       - checkout
-      - python/install-packages:
-          pkg-manager: pip
-
+      - run: pip install -r requirements.txt
       - run:
           name: build site
           command: mkdocs build 
-
-      - deploy:
+      - run:
           name: deploy site
           command: mkdocs gh-deploy
-          
+
 # Invoke jobs via workflows
 workflows:
   mkdocs:
     jobs:
-      - build-and-test
+      - build-and-deploy
