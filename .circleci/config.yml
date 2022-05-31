@@ -16,9 +16,12 @@ jobs:
 
       - run:
           name: build site
-          command: mkdocs build \
-                   mkdocs gh-deploy
+          command: mkdocs build 
 
+      - deploy:
+          name: deploy site
+          command: mkdocs gh-deploy
+          
 # Invoke jobs via workflows
 workflows:
   mkdocs:
